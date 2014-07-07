@@ -5,6 +5,134 @@ var random_str = require('random-string');
 
 require('date-utils');
 
+var sig_2_app = {
+    "1": {
+        "appname": "Box",
+        "hostname": "www.box.com",
+        "category": "storage"
+    },
+
+    "2": {
+        "appname": "Dropbox",
+        "hostname": "www.dropbox.com",
+        "category": "storage"
+    },
+
+    "3": {
+        "appname": "GoogleDrive",
+        "hostname": "www.gdrive.com",
+        "category": "storage"
+    },
+
+    "4": {
+        "appname": "ShareFile",
+        "hostname": "www.sharefile.com",
+        "category": "storage"
+    },
+
+    "5": {
+        "appname": "SugarSync",
+        "hostname": "www.sugarsync.com",
+        "category": "storage"
+    },
+
+    "6": {
+        "appname": "DropSend",
+        "hostname": "www.dropsend.com",
+        "category": "storage"
+    },
+
+    "7": {
+        "appname": "PhotoBucket",
+        "hostname": "www.photobucket.com",
+        "category": "storage"
+    },
+
+    "8": {
+        "appname": "SkyPath",
+        "hostname": "www.skypath.com",
+        "category": "storage"
+    },
+
+    "9": {
+        "appname": "icloud",
+        "hostname": "www.icloud.com",
+        "category": "storage"
+    },
+
+    "10": {
+        "appname": "SyncPlicity",
+        "hostname": "www.syncplicity.com",
+        "category": "storage"
+    },
+
+    "11": {
+        "appname": "Hightail",
+        "hostname": "www.hightail.com",
+        "category": "storage"
+    },
+
+    "12": {
+        "appname": "SyncPlicity",
+        "hostname": "www.syncplicity.com",
+        "category": "storage"
+    },
+
+    "13": {
+        "appname": "MicrosoftSkyDrive",
+        "hostname": "www.msskydrive.com",
+        "category": "storage"
+    },
+
+    "14": {
+        "appname": "HighTail",
+        "hostname": "www.hightail.com",
+        "category": "storage"
+    },
+
+    "15": {
+        "appname": "Wuala",
+        "hostname": "www.wuala.com",
+        "category": "storage"
+    },
+
+    "16": {
+        "appname": "Egnyte",
+        "hostname": "www.ngnyte.com",
+        "category": "storage"
+    },
+
+    "17": {
+        "appname": "WeTransfer",
+        "hostname": "www.wetransfer.com",
+        "category": "storage"
+    },
+
+    "18": {
+        "appname": "Accelion",
+        "hostname": "www.accelion.com",
+        "category": "storage"
+    },
+
+    "19": {
+        "appname": "LiveDrive",
+        "hostname": "www.livedrive.com",
+        "category": "storage"
+    },
+
+    "20": {
+        "appname": "JungleDisk",
+        "hostname": "www.jungledisk.com",
+        "category": "storage"
+    },
+
+    "21": {
+        "appname": "OneDrive",
+        "hostname": "www.onedrive.com",
+        "category": "storage"
+    }
+}
+
 var type_2_value = {
     "string": function() {
         return random_string();
@@ -152,7 +280,7 @@ function random_data(type, format) {
     return method(format);
 }
 
-
+exports.sig_2_app = sig_2_app;
 exports.random_data = random_data;
 exports.random_array_data = random_array_data;
 exports.random_public_ip = random_public_ip;
