@@ -130,6 +130,50 @@ var sig_2_app = {
         "appname": "OneDrive",
         "hostname": "www.onedrive.com",
         "category": "storage"
+    },
+
+    // add more for GW
+
+    "10001": {
+        "appname": "gmail",
+        "hostname": "www.gmail.com",
+        "category": "mail"
+    },
+
+    "10002": {
+        "appname": "hotmail",
+        "hostname": "www.hotmail.com",
+        "category": "mail"
+    },
+
+    "10003": {
+        "appname": "inbox",
+        "hostname": "www.inbox.com",
+        "category": "mail"
+    },
+
+    '10004': {
+        "appname": "yahoo-mail",
+        "hostname": "www.yahoo-mail.com",
+        "category": "mail"
+    },
+
+    '10005': {
+        "appname": "zoho",
+        "hostname": "www.zoho.com",
+        "category": "mail"
+    },
+
+    '20001': {
+        "appname": "skype",
+        "hostname": "www.skype.com",
+        "category": "im"
+    },
+
+    '20002': {
+        "appname": "gtalk",
+        "hostname": "www.gtalk.com",
+        "category": "im"
     }
 }
 
@@ -155,11 +199,15 @@ var type_2_value = {
     },
 
     "url": function(format, defval) {
-        return random_array_data([
-            "www.box.com",
-            "www.dropbox.com",
-            "www.saleforce.com"
-        ]);
+
+        var keys = [];
+
+
+        for (key in sig_2_app) {
+            keys.push(key);
+        }
+
+        return sig_2_app[random_array_data(keys)]['hostname']
     },
 
     "user_agent": function() {
