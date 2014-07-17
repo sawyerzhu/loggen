@@ -5,131 +5,256 @@ var random_str = require('random-string');
 
 require('date-utils');
 
-var sig_2_app = {
-    "1": {
-        "appname": "Box",
-        "hostname": "www.box.com",
-        "category": "storage"
-    },
+var app_id_2_app = {
+    "1": require('./aie/box'),
 
-    "2": {
-        "appname": "Dropbox",
-        "hostname": "www.dropbox.com",
-        "category": "storage"
-    },
+    "2": require('./aie/dropbox'),
 
     "3": {
         "appname": "GoogleDrive",
         "hostname": "www.gdrive.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "4": {
         "appname": "ShareFile",
         "hostname": "www.sharefile.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "5": {
         "appname": "SugarSync",
         "hostname": "www.sugarsync.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "6": {
         "appname": "DropSend",
         "hostname": "www.dropsend.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "7": {
         "appname": "PhotoBucket",
         "hostname": "www.photobucket.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "8": {
         "appname": "SkyPath",
         "hostname": "www.skypath.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "9": {
         "appname": "icloud",
         "hostname": "www.icloud.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "10": {
         "appname": "SyncPlicity",
         "hostname": "www.syncplicity.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "11": {
         "appname": "Hightail",
         "hostname": "www.hightail.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "12": {
         "appname": "SyncPlicity",
         "hostname": "www.syncplicity.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "13": {
         "appname": "MicrosoftSkyDrive",
         "hostname": "www.msskydrive.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "14": {
         "appname": "HighTail",
         "hostname": "www.hightail.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "15": {
         "appname": "Wuala",
         "hostname": "www.wuala.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "16": {
         "appname": "Egnyte",
         "hostname": "www.ngnyte.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "17": {
         "appname": "WeTransfer",
         "hostname": "www.wetransfer.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "18": {
         "appname": "Accelion",
         "hostname": "www.accelion.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "19": {
         "appname": "LiveDrive",
         "hostname": "www.livedrive.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "20": {
         "appname": "JungleDisk",
         "hostname": "www.jungledisk.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     "21": {
         "appname": "OneDrive",
         "hostname": "www.onedrive.com",
-        "category": "storage"
+        "category": "storage",
+        "activity_path": {
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "preview": ["100000", "100003"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
     },
 
     // add more for GW
@@ -178,6 +303,10 @@ var sig_2_app = {
 }
 
 var type_2_value = {
+    "boolean": function() {
+        return random_boolean();
+    },
+
     "string": function() {
         return random_string();
     },
@@ -203,11 +332,11 @@ var type_2_value = {
         var keys = [];
 
 
-        for (key in sig_2_app) {
+        for (key in app_id_2_app) {
             keys.push(key);
         }
 
-        return sig_2_app[random_array_data(keys)]['hostname']
+        return app_id_2_app[random_array_data(keys)]['hostname']
     },
 
     "user_agent": function() {
@@ -318,6 +447,48 @@ function random_file_name(file_name, suffix) {
     return file_name.toLowerCase() + "." + suffix;
 }
 
+function random_boolean() {
+    return random_array_data([true, false]);
+}
+
+function random_app(id) {
+    var keys = [];
+
+
+    for (key in app_id_2_app) {
+
+        // just for have signature definition apps
+        if(parseInt(key) < 10000) {
+            keys.push(key);
+        }
+    }
+
+    if (id) {
+        keys = [id];
+    }
+
+    return app_id_2_app[random_array_data(keys)];
+}
+
+function random_app_activity_path(app, activity_path_key) {
+    if (!app || !app.activity_path) {
+        throw "The app(" + app.hostname + ") does not has activity path";
+    }
+
+    var keys = [];
+
+
+    for (key in app.activity_path) {
+        keys.push(key)
+    }
+
+    if (activity_path_key) {
+        keys = [activity_path_key];
+    }
+
+    return app.activity_path[random_array_data(keys)];
+}
+
 function random_data(type, format) {
     var method = type_2_value[type];
 
@@ -328,7 +499,7 @@ function random_data(type, format) {
     return method(format);
 }
 
-exports.sig_2_app = sig_2_app;
+exports.app_id_2_app = app_id_2_app;
 exports.random_data = random_data;
 exports.random_array_data = random_array_data;
 exports.random_public_ip = random_public_ip;
@@ -340,3 +511,5 @@ exports.random_http_method = random_http_method;
 exports.random_person_name = random_person_name;
 exports.random_email = random_email;
 exports.random_file_name = random_file_name;
+exports.random_app = random_app;
+exports.random_app_activity_path = random_app_activity_path;

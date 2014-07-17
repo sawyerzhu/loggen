@@ -10,18 +10,42 @@ var log_format = require('./log_format');
 var udp = require('./transport/udp');
 var redis = require('./transport/redis');
 
+
+function sendGwLog(log) {
+    // udp_client.send(log);
+    console.log(log);
+}
+
+function sendAieLog(log) {
+    // redis_client.rpush("aie", log);
+    console.log(log);
+}
+
+function sendAieAndGwLog(log) {
+    sendGwLog(log.gw);
+    sendAieLog(log.aie)
+}
+
+function sendAieActivityPathLog(logs) {
+    for (var m = 0; m < logs.length; m++) {
+        var log = logs[m];
+
+        sendAieAndGwLog(log);
+    }
+}
+
 var host = '127.0.0.1'; //'127.0.0.1'
-var udp_client = new udp.udp_client(host, 514);
-var redis_client = new redis.redis_client(host, 6379);
+// var udp_client = new udp.udp_client(host, 514);
+// var redis_client = new redis.redis_client(host, 6379);
 
 var args = process.argv.slice(2);
 
 var startDate = new Date(Date.parse('2014-01-01T00:00:00'));
 var endDate = new Date(Date.parse('2014-09-01T00:00:00'));
 
-while (startDate.isBefore(endDate)) {
+// while (startDate.isBefore(endDate)) {
 
-    for (var i = 0; i < 10; i++) {
+   // for (var i = 0; i < 10; i++) {
 
         var date = new Date(startDate.toFormat('YYYY-MM-DDTHH:MI:SS'));
         date.addHours(random_data.random_int(1, 15));
@@ -32,25 +56,21 @@ while (startDate.isBefore(endDate)) {
             }
         };
 
-        var gw_log = log_format.gen_gw_log(_.clone(datas));
-        udp_client.send(gw_log);
-        console.log(gw_log);
+        // var gw_log = log_format.gen_gw_log(_.clone(datas));
+        // sendGwLog(gw_log);
 
-        var aie_l2_login_log = log_format.gen_aie_log('aie_l2_login', _.clone(datas));
-        redis_client.rpush("aie", aie_l2_login_log);
-        console.log(aie_l2_login_log);
+        var app = random_data.random_app();
 
-        var aie_l2_log = log_format.gen_aie_log('aie_l2', _.clone(datas));
-        redis_client.rpush("aie", aie_l2_log);
-        console.log(aie_l2_log);
+        // var aie_l2_login_log = log_format.gen_aie_and_gw_log(app, 100000, _.clone(datas));
+        // sendAieAndGwLog(aie_l2_login_log);
 
-        var aie_l3_log = log_format.gen_aie_log('aie_l3', _.clone(datas));
-        redis_client.rpush("aie", aie_l3_log);
-        console.log(aie_l3_log);
-    }
+        var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app), _.clone(datas));
 
-    startDate.addDays(1);
-}
-
-udp_client.close();
-redis_client.close();
+        sendAieActivityPathLog(logs)
+//    }
+//
+//     startDate.addDays(1);
+// }
+//
+// udp_client.close();
+// redis_client.close();

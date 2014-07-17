@@ -4,6 +4,7 @@ var fs = require('fs');
 var _ = require('underscore');
 
 var random_data = require('./random_data');
+var app_id_2_app = random_data.app_id_2_app;
 
 var GW_LOG_FORMAT = (function() {
 
@@ -45,27 +46,10 @@ var AIE_LOG_HEAD_FORMAT = (function() {
     return obj;
 })();
 
-function get_aie_activity_format(activity_name) {
-    var log_format = require('./aie/aie_format')[activity_name];
 
-    var obj = {};
-
-    for (var key in log_format) {
-        obj[key] = {
-            "type": "string",
-            "default": null,
-             "format": null
-        };
-
-        _.extend(obj[key], log_format[key]);
-    }
-
-    return obj;
-}
-
-function get_aie_log_format(activity_name) {
+function get_aie_log_format(activity_obj) {
     var copy_new = _.clone(AIE_LOG_HEAD_FORMAT);
-    copy_new.activity.format =  get_aie_activity_format(activity_name);
+    copy_new.activity.format =  activity_obj;
 
     return copy_new;
 }
@@ -117,7 +101,7 @@ function gen_log(log_format, data) {
                 var child_field = object_format[child_key];
 
                 if (!child_field.key) {
-                    throw "Invalid child key: " + JSON.stringify(child_field);
+                    child_field.key = child_key;
                 }
 
                 sub_obj[child_field.key] = get_filed_val(object_format, data, child_key);
@@ -144,9 +128,84 @@ function gen_gw_log(data) {
     return gen_log(GW_LOG_FORMAT, data);
 }
 
-function gen_aie_log(activity_name, data) {
-    return gen_log(get_aie_log_format(activity_name), data);
+function gen_aie_log(app, sig_id, data) {
+    if (!app.activities || !app.activities['' + sig_id]) {
+        throw "Unknow app(" + app.appname + ") with sig id: " + sig_id;
+    }
+    var sig_info = app.activities['' + sig_id];
+
+    var obj = {
+        "appname": {
+            "type": "string",
+            "key": "appname"
+        },
+
+        "login_name": {
+            "type": "email",
+            "key": "login_name"
+        },
+
+        "activity": {
+            "key": "activity",
+            "type": "string",
+            "default": null,
+             "format": null
+        }
+    };
+
+    for (var key in sig_info.keys) {
+        obj[key] = {
+            "type": "string",
+            "default": null,
+             "format": null
+        };
+
+        _.extend(obj[key], sig_info.keys[key]);
+    }
+
+
+    _.extend(data, {
+        sig_id: sig_id,
+        appname: app.appname,
+        hostname: app.hostname,
+        category: app.category,
+        activity: sig_info.name
+    });
+
+    return gen_log(get_aie_log_format(obj), data);
+}
+
+function gen_aie_and_gw_log(app, sig_id, data) {
+    var aie_log = gen_aie_log(app, sig_id, data);
+
+    gw_data = {
+        timestamp: (new Date(Date.parse(data.timestamp))).toFormat("MMM DD HH:MI:SS"),
+        req_src: data.src_ip,
+        req_dst: data.dst_ip,
+        req_spt: data.src_port,
+        req_dpt: data.dst_port,
+        req_dn: data.hostname
+    }
+
+    var gw_log = gen_gw_log(gw_data);
+
+    return {
+        aie: aie_log,
+        gw: gw_log
+    }
+}
+
+function gen_aie_acvitity_path_log(app, activity_path, data) {
+    var logs = [];
+
+    for (var i = 0; i < activity_path.length; i++) {
+        logs.push(gen_aie_and_gw_log(app, activity_path[i], data));
+    }
+
+    return logs;
 }
 
 exports.gen_gw_log = gen_gw_log;
 exports.gen_aie_log = gen_aie_log;
+exports.gen_aie_and_gw_log = gen_aie_and_gw_log;
+exports.gen_aie_acvitity_path_log = gen_aie_acvitity_path_log;

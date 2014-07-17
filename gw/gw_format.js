@@ -22,10 +22,11 @@ exports.gw_format = {
     },
     "activity": {
         "type": "string",
-        "default": [
+        "default": "DESTROY",
+    /*    "default": [
             "NEW",
             "DESTROY"
-        ],
+        ],*/
         "prefix": " [",
         "suffix": "]"
     },
