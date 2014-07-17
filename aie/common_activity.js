@@ -1,4 +1,6 @@
 
+var _ = require('underscore');
+
 function get_user_token(datas) {
     return datas['login_name'];
 }
@@ -7,17 +9,18 @@ module.exports = function(user_id_key, get_user_id_func) {
     user_id_key = user_id_key || 'user_id';
     get_user_id_func = get_user_id_func || get_user_token;
 
+    var user_id_obj = {};
+    user_id_obj[user_id_key] = {
+        "type": "string",
+        "default": function(format, datas, key) {
+            return get_user_id_func(datas);
+        }
+    }
+
     return {
         "100000": {
             "name": "login",
-            "keys": {
-
-                user_id_key: {
-                    "type": "string",
-                    "default": function(format, datas, key) {
-                        return get_user_id_func(datas);
-                    }
-                },
+            "keys": _.extend(user_id_obj, {
 
                 "rsp_code": {
                     "type": "rsp_code"
@@ -31,19 +34,12 @@ module.exports = function(user_id_key, get_user_id_func) {
                     "type": "boolean",
                     "default": true
                 }
-            }
+            })
         },
 
         "100001": {
             "name": "upload",
-            "keys": {
-
-                user_id_key: {
-                    "type": "string",
-                    "default": function(format, datas, key) {
-                        return get_user_id_func(datas);
-                    }
-                },
+            "keys": _.extend(user_id_obj, {
 
                 "rsp_code": {
                     "type": "rsp_code"
@@ -65,19 +61,12 @@ module.exports = function(user_id_key, get_user_id_func) {
                 "file_size": {
                     "type": "int"
                 }
-            }
+            })
         },
 
         "100002": {
             "name": "download",
-            "keys": {
-
-                user_id_key: {
-                    "type": "string",
-                    "default": function(format, datas, key) {
-                        return get_user_id_func(datas);
-                    }
-                },
+            "keys": _.extend(user_id_obj, {
 
                 "rsp_code": {
                     "type": "rsp_code"
@@ -99,19 +88,12 @@ module.exports = function(user_id_key, get_user_id_func) {
                 "file_size": {
                     "type": "int"
                 }
-            }
+            })
         },
 
         "100003": {
             "name": "delete",
-            "keys": {
-
-                user_id_key: {
-                    "type": "string",
-                    "default": function(format, datas, key) {
-                        return get_user_id_func(datas);
-                    }
-                },
+            "keys": _.extend(user_id_obj, {
 
                 "rsp_code": {
                     "type": "rsp_code"
@@ -133,19 +115,12 @@ module.exports = function(user_id_key, get_user_id_func) {
                 "file_size": {
                     "type": "int"
                 }
-            }
+            })
         },
 
         "100004": {
             "name": "preview",
-            "keys": {
-
-                user_id_key: {
-                    "type": "string",
-                    "default": function(format, datas, key) {
-                        return get_user_id_func(datas);
-                    }
-                },
+            "keys": _.extend(user_id_obj, {
 
                 "rsp_code": {
                     "type": "rsp_code"
@@ -167,7 +142,7 @@ module.exports = function(user_id_key, get_user_id_func) {
                 "file_size": {
                     "type": "int"
                 }
-            }
+            })
         }
 
     }
