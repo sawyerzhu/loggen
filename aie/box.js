@@ -263,14 +263,14 @@ module.exports = {
             "name": "download_file",
             "keys": {
                 "user_id": {
-                    "type": "",
+                    "type": "string",
                     "key": "user_id",
                     "default": function(format, datas, key) {
                         return get_user_id(datas);
                     }
                 },
                 "file_id": {
-                    "type": "",
+                    "type": "int",
                     "key": "file_id"
                 },
                 "rsp_code": {

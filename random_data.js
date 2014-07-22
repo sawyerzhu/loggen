@@ -493,7 +493,7 @@ function random_data(type, format) {
     var method = type_2_value[type];
 
     if (!method) {
-        throw "Can not get random data method with type: " + type;
+        throw "Can not get random data method with type: " + type + " With format: " + JSON.stringify(format);
     }
 
     return method(format);
