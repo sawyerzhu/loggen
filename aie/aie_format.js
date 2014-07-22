@@ -15,7 +15,7 @@ exports.aie_head = {
 
     "gw_id": {
         "type": "string",
-        "default": "GW30000001"
+        "default": "GW20000001"
     },
 
     "aie_id": {
