@@ -32,7 +32,7 @@ exports.gw_format = {
     },
     "gwid": {
         "type": "string",
-        "default": "GW20000001"
+        "default": "GW30000001"
     },
     "src_public_ip": {
         "type": "ip",

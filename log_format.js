@@ -84,6 +84,32 @@ function get_filed_val(log_format, data, key) {
     return val;
 }
 
+function gen_obj_val(log_format, field, data) {
+    var object_format = field.format;
+
+    var sub_obj = {};
+
+    for (var child_key in object_format) {
+        var child_field = object_format[child_key];
+
+        if (!child_field.key) {
+            child_field.key = child_key;
+        }
+
+        if (child_field.type === 'object') {
+            sub_obj[child_field.key] = gen_obj_val(log_format, child_field, data);
+        } else if (child_field.type === 'object_array') {
+            sub_obj[child_field.key] = [gen_obj_val(log_format, child_field, data)];
+        } else {
+            sub_obj[child_field.key] = get_filed_val(object_format, data, child_key);
+        }
+
+        data[child_key] = sub_obj[child_field.key];
+    }
+
+    return sub_obj;
+}
+
 function gen_log(log_format, data) {
     var log = [];
 
@@ -93,21 +119,7 @@ function gen_log(log_format, data) {
         var val = null;
 
         if (field.type == 'object') {
-            object_format = field.format;
-
-            var sub_obj = {};
-
-            for (var child_key in object_format) {
-                var child_field = object_format[child_key];
-
-                if (!child_field.key) {
-                    child_field.key = child_key;
-                }
-
-                sub_obj[child_field.key] = get_filed_val(object_format, data, child_key);
-
-                data[child_key] = sub_obj[child_field.key];
-            }
+            var sub_obj = gen_obj_val(log_format, field, data)
 
             val = JSON.stringify(sub_obj);
         } else {
@@ -120,7 +132,7 @@ function gen_log(log_format, data) {
         log.push(val);
         log.push(field.suffix);
     }
-
+    //console.log(JSON.stringify(data));
     return log.join('');
 }
 

@@ -49,17 +49,25 @@ module.exports = function(user_id_key, get_user_id_func) {
                     "type": "user_agent"
                 },
 
-                "file_name": {
-                    "type": "file_name"
-                },
+                "objs": {
+                    "type": "object_array",
+                    "format": {
+                        "objs.name": {
+                            "type": "file_name",
+                            "key": "name"
+                        },
 
-                "file_type": {
-                    "type": "string",
-                    "default": "file"
-                },
+                        "objs.type": {
+                            "type": "string",
+                            "default": "file",
+                            "key": "type"
+                        },
 
-                "file_size": {
-                    "type": "int"
+                        "objs.size": {
+                            "type": "int",
+                            "key": "size"
+                        }
+                    }
                 }
             })
         },
@@ -76,17 +84,25 @@ module.exports = function(user_id_key, get_user_id_func) {
                     "type": "user_agent"
                 },
 
-                "file_name": {
-                    "type": "file_name"
-                },
+                "objs": {
+                    "type": "object_array",
+                    "format": {
+                        "objs.name": {
+                            "type": "file_name",
+                            "key": "name"
+                        },
 
-                "file_type": {
-                    "type": "string",
-                    "default": "file"
-                },
+                        "objs.type": {
+                            "type": "string",
+                            "default": "file",
+                            "key": "type"
+                        },
 
-                "file_size": {
-                    "type": "int"
+                        "objs.size": {
+                            "type": "int",
+                            "key": "size"
+                        }
+                    }
                 }
             })
         },
@@ -103,17 +119,25 @@ module.exports = function(user_id_key, get_user_id_func) {
                     "type": "user_agent"
                 },
 
-                "file_name": {
-                    "type": "file_name"
-                },
+                "objs": {
+                    "type": "object_array",
+                    "format": {
+                        "objs.name": {
+                            "type": "file_name",
+                            "key": "name"
+                        },
 
-                "file_type": {
-                    "type": "string",
-                    "default": "file"
-                },
+                        "objs.type": {
+                            "type": "string",
+                            "default": "file",
+                            "key": "type"
+                        },
 
-                "file_size": {
-                    "type": "int"
+                        "objs.size": {
+                            "type": "int",
+                            "key": "size"
+                        }
+                    }
                 }
             })
         },
@@ -130,17 +154,25 @@ module.exports = function(user_id_key, get_user_id_func) {
                     "type": "user_agent"
                 },
 
-                "file_name": {
-                    "type": "file_name"
-                },
+                "objs": {
+                    "type": "object_array",
+                    "format": {
+                        "objs.name": {
+                            "type": "file_name",
+                            "key": "name"
+                        },
 
-                "file_type": {
-                    "type": "string",
-                    "default": "file"
-                },
+                        "objs.type": {
+                            "type": "string",
+                            "default": "file",
+                            "key": "type"
+                        },
 
-                "file_size": {
-                    "type": "int"
+                        "objs.size": {
+                            "type": "int",
+                            "key": "size"
+                        }
+                    }
                 }
             })
         }
