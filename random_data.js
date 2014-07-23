@@ -89,8 +89,8 @@ var app_id_2_app = {
     },
 
     "9": {
-        "appname": "icloud",
-        "hostname": "www.icloud.com",
+        "appname": "mozy",
+        "hostname": "www.mozy.com",
         "category": "storage",
         "activity_path": {
             "upload": ["100000", "100001"],
@@ -302,6 +302,297 @@ var app_id_2_app = {
     }
 }
 
+var user_info = {
+    "jackson@gmail.com": {
+        "unsub_emails": ['jackson@yahoo.com', 'jackson@abc.com'],
+        "devices": [{
+                "mac": 'ja:ck:so:n0:00:00'
+            },
+
+            {
+                "mac": 'ja:ck:so:n1:00:00'
+            }
+        ]
+    },
+
+    "aiden@gmail.com": {
+        "unsub_emails": ['aiden@yahoo.com', 'aiden@abc.com'],
+        "devices": [{
+                "mac": 'ai:de:n0:00:00:00'
+            },
+
+            {
+                "mac": 'ai:de:n1:00:00:00'
+            }
+        ]
+    },
+
+    "liam@gmail.com": {
+        "unsub_emails": ['liam@yahoo.com', 'liam@abc.com'],
+        "devices": [{
+                "mac": 'li:am:00:00:00:00'
+            },
+
+            {
+                "mac": 'li:am:01:00:00:00'
+            }
+        ]
+    },
+
+    "lucas@gmail.com": {
+        "unsub_emails": ['lucas@yahoo.com', 'lucas@abc.com'],
+        "devices": [{
+                "mac": 'lu:ca:s0:00:00:00'
+            },
+
+            {
+                "mac": 'lu:ca:s1:00:00:00'
+            }
+        ]
+    },
+
+    "justin@gmail.com": {
+        "unsub_emails": ['justin@yahoo.com', 'justin@abc.com'],
+        "devices": [{
+                "mac": 'ju:st:in:00:00:00'
+            },
+
+            {
+                "mac": 'ju:st:in:01:00:00'
+            }
+        ]
+    },
+
+    "eric@gmail.com": {
+        "unsub_emails": ['eric@yahoo.com', 'eric@abc.com'],
+        "devices": [{
+                "mac": 'er:ic:00:00:00:00'
+            },
+
+            {
+                "mac": 'er:ic:01:00:00:00'
+            }
+        ]
+    },
+
+    "david@gmail.com": {
+        "unsub_emails": ['david@yahoo.com', 'david@abc.com'],
+        "devices": [{
+                "mac": 'da:vi:d0:00:00:00'
+            },
+
+            {
+                "mac": 'da:vi:d1:01:00:00'
+            }
+        ]
+    },
+
+    "emma@gmail.com": {
+        "unsub_emails": ['emma@yahoo.com', 'emma@abc.com'],
+        "devices": [{
+                "mac": 'em:ma:00:00:00:00'
+            },
+
+            {
+                "mac": 'em:ma:01:00:00:00'
+            }
+        ]
+    },
+
+    "mary@gmail.com": {
+        "unsub_emails": ['mary@yahoo.com', 'mary@abc.com'],
+        "devices": [{
+                "mac": 'ma:ry:00:00:00:00'
+            },
+
+            {
+                "mac": 'ma:ry:01:00:00:00'
+            }
+        ]
+    },
+
+    "susan@gmail.com": {
+        "unsub_emails": ['susan@yahoo.com', 'susan@abc.com'],
+        "devices": [{
+                "mac": 'su:sa:n0:00:00:00'
+            },
+
+            {
+                "mac": 'su:sa:n1:00:00:00'
+            }
+        ]
+    },
+
+    "jacob@gmail.com": {
+        "unsub_emails": ['jacob@yahoo.com', 'jacob@abc.com'],
+        "devices": [{
+                "mac": 'ja:co:b0:00:00:00'
+            },
+
+            {
+                "mac": 'ja:co:b1:00:00:00'
+            }
+        ]
+    },
+
+    "ryan@gmail.com": {
+        "unsub_emails": ['ryan@yahoo.com', 'ryan@abc.com'],
+        "devices": [{
+                "mac": 'ry:an:00:00:00:00'
+            },
+
+            {
+                "mac": 'ry:an:01:00:00:00'
+            }
+        ]
+    },
+
+    "alexander@gmail.com": {
+        "unsub_emails": ['alexander@yahoo.com', 'alexander@abc.com'],
+        "devices": [{
+                "mac": 'al:ex:an:de:r0:00'
+            },
+
+            {
+                "mac": 'al:ex:an:de:r1:00'
+            }
+        ]
+    },
+
+    "james@gmail.com": {
+        "unsub_emails": ['james@yahoo.com', 'james@abc.com'],
+        "devices": [{
+                "mac": 'ja:me:s0:00:00:00'
+            },
+
+            {
+                "mac": 'ja:me:s1:00:00:00'
+            }
+        ]
+    },
+
+    "robert@gmail.com": {
+        "unsub_emails": ['robert@yahoo.com', 'robert@abc.com'],
+        "devices": [{
+                "mac": 'ro:be:rt:00:00:00'
+            },
+
+            {
+                "mac": 'ro:be:rt:01:00:00'
+            }
+        ]
+    },
+
+    "william@gmail.com": {
+        "unsub_emails": ['william@yahoo.com', 'william@abc.com'],
+        "devices": [{
+                "mac": 'wi:ll:ia:m0:00:00'
+            },
+
+            {
+                "mac": 'wi:ll:ia:m1:00:00'
+            }
+        ]
+    },
+
+    "jack@gmail.com": {
+        "unsub_emails": ['jack@yahoo.com', 'jack@abc.com'],
+        "devices": [{
+                "mac": 'ja:ck:00:00:00:00'
+            },
+
+            {
+                "mac": 'ja:ck:01:00:00:00'
+            }
+        ]
+    },
+
+    "simon@gmail.com": {
+        "unsub_emails": ['simon@yahoo.com', 'simon@abc.com'],
+        "devices": [{
+                "mac": 'si:mo:n0:00:00:00'
+            },
+
+            {
+                "mac": 'si:mo:n1:00:00:00'
+            }
+        ]
+    },
+
+    "alex@gmail.com": {
+        "unsub_emails": ['alex@yahoo.com', 'alex@abc.com'],
+        "devices": [{
+                "mac": 'al:ex:00:00:00:00'
+            },
+
+            {
+                "mac": 'al:ex:01:00:00:00'
+            }
+        ]
+    },
+
+    "olivia@gmail.com": {
+        "unsub_emails": ['olivia@yahoo.com', 'olivia@abc.com'],
+        "devices": [{
+                "mac": 'ol:iv:ia:00:00:00'
+            },
+
+            {
+                "mac": 'ol:iv:ia:01:00:00'
+            }
+        ]
+    },
+
+    "john@gmail.com": {
+        "unsub_emails": ['john@yahoo.com', 'john@abc.com'],
+        "devices": [{
+                "mac": 'jo:hn:00:00:00:00'
+            },
+
+            {
+                "mac": 'jo:hn:01:00:00:00'
+            }
+        ]
+    },
+
+    "daniel@gmail.com": {
+        "unsub_emails": ['daniel@yahoo.com', 'daniel@abc.com'],
+        "devices": [{
+                "mac": 'da:ni:el:00:00:00'
+            },
+
+            {
+                "mac": 'da:ni:el:01:00:00'
+            }
+        ]
+    },
+
+    "moshe@gmail.com": {
+        "unsub_emails": ['moshe@yahoo.com', 'moshe@abc.com'],
+        "devices": [{
+                "mac": 'mo:sh:e0:00:00:00'
+            },
+
+            {
+                "mac": 'mo:sh:e1:01:00:00'
+            }
+        ]
+    },
+
+    "julia@gmail.com": {
+        "unsub_emails": ['julia@yahoo.com', 'julia@abc.com'],
+        "devices": [{
+                "mac": 'ju:li:a0:00:00:00'
+            },
+
+            {
+                "mac": 'ju:li:a1:00:00:00'
+            }
+        ]
+    }
+
+}
+
 var type_2_value = {
     "boolean": function() {
         return random_boolean();
@@ -361,6 +652,10 @@ var type_2_value = {
 
     "file_name": function() {
         return random_file_name();
+    },
+
+    "mac": function() {
+        return random_mac();
     }
 }
 
@@ -384,11 +679,12 @@ function random_date_data(format, defval) {
 
 function random_public_ip() {
     return random_array_data([
-        "197.199.253.1",
-        "197.199.254.8",
-        "218.176.242.88",
-        "206.190.36.45",
-        "68.180.206.184"
+        "205.251.245.123",
+        "221.176.24.154",
+        "54.84.19.197",
+        "63.218.211.37",
+        "54.84.177.105",
+        "74.125.239.115"
     ]);
 }
 
@@ -435,9 +731,13 @@ function random_person_name() {
 
 function random_email(user_name, domain) {
     user_name = user_name || random_person_name();
-    domain = domain || random_array_data(["gmail.com", "yahoo.com", "126.com", "abc.com"]);
+    domain = domain || random_array_data(["gmail.com", "yahoo.com"]);
 
     return user_name.toLowerCase() + "@" + domain;
+}
+
+function random_mac() {
+    return random_array_data(['5c:f9:38:8d:b7:64', "22:00:0a:41:86:a0"]);
 }
 
 function random_file_name(file_name, suffix) {
@@ -511,5 +811,6 @@ exports.random_http_method = random_http_method;
 exports.random_person_name = random_person_name;
 exports.random_email = random_email;
 exports.random_file_name = random_file_name;
+exports.random_mac = random_mac;
 exports.random_app = random_app;
 exports.random_app_activity_path = random_app_activity_path;

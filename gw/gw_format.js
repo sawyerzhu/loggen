@@ -56,6 +56,10 @@ exports.gw_format = {
         "type": "url",
         "prefix": " DN="
     },
+    "req_mac": {
+        "type": "mac",
+        "prefix": " MAC="
+    },
     "req_proto": {
         "type": "string",
         "default": "TCP",
