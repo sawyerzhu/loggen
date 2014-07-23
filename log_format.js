@@ -190,15 +190,14 @@ function gen_aie_log(app, sig_id, data) {
 function gen_aie_and_gw_log(app, sig_id, data) {
     var aie_log = gen_aie_log(app, sig_id, data);
 
-    gw_data = {
+    gw_data = _.extend(_.clone(data), {
         timestamp: (new Date(Date.parse(data.timestamp))).toFormat("MMM DD HH:MI:SS"),
         req_src: data.src_ip,
         req_dst: data.dst_ip,
         req_spt: data.src_port,
         req_dpt: data.dst_port,
-        req_dn: data.hostname,
-        req_mac: data.req_mac
-    }
+        req_dn: data.hostname
+    });
 
     var gw_log = gen_gw_log(gw_data);
 
