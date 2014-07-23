@@ -33,7 +33,7 @@ udp_client.prototype.close = function() {
 
         this.client.close();
     } else {
-        var t = setInterval(function(){
+        var t = setInterval(function() {
             if (complete_count == send_count || try_close_count == 60) {
                 console.log("UDP send log count: " + send_count);
 
