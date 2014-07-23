@@ -50,9 +50,26 @@ while (startDate.isBefore(endDate)) {
         var date = new Date(startDate.toFormat('YYYY-MM-DDTHH:MI:SS'));
         date.addHours(random_data.random_int(1, 15));
 
+        var user_info = random_data.random_user_info();
+
+
         var datas = {
             "timestamp": function(log_format, data, key) {
                 return date.toFormat(log_format[key].format);
+            },
+
+            "login_name": function() {
+                var mails = _.clone(user_info.unsub_emails);
+                mails.push(user_info.sub_email);
+
+                return random_data.random_array_data(mails);
+            },
+
+            "req_mac": function() {
+
+                var device = random_data.random_array_data(user_info.devices);
+
+                return device.mac;
             }
         };
 

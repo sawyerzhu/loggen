@@ -752,6 +752,16 @@ function random_boolean() {
 }
 
 function random_app(id) {
+    var keys = get_all_app_ids();
+
+    if (id) {
+        keys = [id];
+    }
+
+    return app_id_2_app[random_array_data(keys)];
+}
+
+function get_all_app_ids() {
     var keys = [];
 
 
@@ -763,11 +773,7 @@ function random_app(id) {
         }
     }
 
-    if (id) {
-        keys = [id];
-    }
-
-    return app_id_2_app[random_array_data(keys)];
+    return keys;
 }
 
 function random_app_activity_path(app, activity_path_key) {
@@ -787,6 +793,33 @@ function random_app_activity_path(app, activity_path_key) {
     }
 
     return app.activity_path[random_array_data(keys)];
+}
+
+function random_user_info(id) {
+    var keys = get_all_user_info_keys();
+
+    if (id) {
+        keys = [id];
+    }
+
+    var key = random_array_data(keys);
+
+    var user = user_info[key];
+
+    user.sub_email = key;
+
+    return user;
+}
+
+function get_all_user_info_keys() {
+    var keys = [];
+
+
+    for (key in user_info) {
+        keys.push(key);
+    }
+
+    return keys;
 }
 
 function random_data(type, format) {
@@ -813,4 +846,7 @@ exports.random_email = random_email;
 exports.random_file_name = random_file_name;
 exports.random_mac = random_mac;
 exports.random_app = random_app;
+exports.get_all_app_ids = get_all_app_ids;
 exports.random_app_activity_path = random_app_activity_path;
+exports.random_user_info = random_user_info;
+exports.get_all_user_info_keys = get_all_user_info_keys;

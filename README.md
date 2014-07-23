@@ -1,3 +1,3 @@
 loggen
 ======
-Log Genertor
+Log Generator
