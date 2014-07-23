@@ -1,0 +1,10 @@
+{
+  "name": "loggen",
+  "version": "0.2.0",
+  "description": "Generating GW and AIE log",
+  "keywords": [
+    "syslog"
+  ],
+  "author": "Sawyer Zhu <sawyerzhu@126.com>",
+  "main": "./loggen.js"
+}
