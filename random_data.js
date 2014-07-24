@@ -3,6 +3,8 @@ var random = require("random-js")();
 
 var random_str = require('random-string');
 
+var _ = require('underscore');
+
 require('date-utils');
 
 var app_id_2_app = {
@@ -287,6 +289,24 @@ var app_id_2_app = {
         "appname": "gtalk",
         "hostname": "www.gtalk.com",
         "category": "im"
+    },
+
+    '30001': {
+        "appname": "facebook",
+        "hostname": "www.facebook.com",
+        "category": "social"
+    },
+
+    '30002': {
+        "appname": "twitter",
+        "hostname": "www.twitter.com",
+        "category": "social"
+    },
+
+    '30003': {
+        "appname": "youtube",
+        "hostname": "www.youtube.com",
+        "category": "social"
     }
 }
 
@@ -743,7 +763,11 @@ function random_app(id) {
     var keys = get_all_app_ids();
 
     if (id) {
-        keys = [id];
+        if (_.isArray(id)) {
+            keys = id;
+        } else {
+            keys = [id];
+        }
     }
 
     return app_id_2_app[random_array_data(keys)];
@@ -776,8 +800,13 @@ function random_app_activity_path(app, activity_path_key) {
         keys.push(key)
     }
 
+
     if (activity_path_key) {
-        keys = [activity_path_key];
+        if (_.isArray(activity_path_key)) {
+            keys = activity_path_key;
+        } else {
+            keys = [activity_path_key];
+        }
     }
 
     return app.activity_path[random_array_data(keys)];
@@ -787,7 +816,11 @@ function random_user_info(id) {
     var keys = get_all_user_info_keys();
 
     if (id) {
-        keys = [id];
+        if (_.isArray(id)) {
+            keys = id;
+        } else {
+            keys = [id];
+        }
     }
 
     var key = random_array_data(keys);
