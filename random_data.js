@@ -271,21 +271,9 @@ var app_id_2_app = {
         "category": "mail"
     },
 
-    "10003": {
-        "appname": "inbox",
-        "hostname": "www.inbox.com",
-        "category": "mail"
-    },
-
     '10004': {
         "appname": "yahoo-mail",
         "hostname": "www.yahoo-mail.com",
-        "category": "mail"
-    },
-
-    '10005': {
-        "appname": "zoho",
-        "hostname": "www.zoho.com",
         "category": "mail"
     },
 

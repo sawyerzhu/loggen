@@ -22,7 +22,7 @@ function sendAieLog(log) {
 }
 
 function sendAieAndGwLog(log) {
-     sendGwLog(log.gw);
+    sendGwLog(log.gw);
     sendAieLog(log.aie)
 }
 
@@ -40,12 +40,12 @@ var redis_client = new redis.redis_client(host, 6379);
 
 var args = process.argv.slice(2);
 
-var startDate = new Date(Date.parse('2014-01-01T00:00:00'));
-var endDate = new Date(Date.parse('2014-09-01T00:00:00'));
+var startDate = new Date(Date.parse('2014-08-01T00:00:00'));
+var endDate = new Date(Date.parse('2014-08-31T00:00:00'));
 
 while (startDate.isBefore(endDate)) {
 
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < 3; i++) {
 
         var date = new Date(startDate.toFormat('YYYY-MM-DDTHH:MI:SS'));
         date.addHours(random_data.random_int(1, 15));
@@ -76,11 +76,11 @@ while (startDate.isBefore(endDate)) {
         var gw_log = log_format.gen_gw_log(_.clone(datas));
         sendGwLog(gw_log);
 
-        var app = random_data.random_app();
+        var app = random_data.random_app('21');
 
         var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app), _.clone(datas));
 
-        sendAieActivityPathLog(logs)
+        sendAieActivityPathLog(logs);
     }
 
     startDate.addDays(1);
