@@ -34,7 +34,7 @@ function sendAieActivityPathLog(logs) {
     }
 }
 
-var host = 'ds.stratusee.com'; //'127.0.0.1'
+var host = '127.0.0.1';
 var udp_client = new udp.udp_client(host, 514);
 var redis_client = new redis.redis_client(host, 6379);
 
@@ -76,7 +76,7 @@ while (startDate.isBefore(endDate)) {
         var gw_log = log_format.gen_gw_log(_.clone(datas));
         sendGwLog(gw_log);
 
-        var app = random_data.random_app('1');
+        var app = random_data.random_app();
 
         var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app), _.clone(datas));
 

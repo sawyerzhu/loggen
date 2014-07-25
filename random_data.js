@@ -739,7 +739,7 @@ function random_person_name() {
 
 function random_email(user_name, domain) {
     user_name = user_name || random_person_name();
-    domain = domain || random_array_data(["gmail.com", "yahoo.com"]);
+    domain = domain || random_array_data(["abc.com", "yahoo.com"]);
 
     return user_name.toLowerCase() + "@" + domain;
 }
@@ -748,11 +748,10 @@ function random_mac() {
     return random_array_data(['5c:f9:38:8d:b7:64', "22:00:0a:41:86:a0"]);
 }
 
-function random_file_name(file_name, suffix) {
-    file_name = file_name || random_array_data(['cms_fs', 'overview', "linux", "jquery", "mootools", "angular", "emberjs", "jetty", "spring", "hibernate", "strtus", "iteye", "csdn", "netty", "mina"]);
-    suffix = suffix || random_array_data(["doc", "pdf", "xls", "txt"]);
+function random_file_name(file_name) {
+    file_name = file_name || random_array_data(['cms_fs.doc', 'overview.doc', "linux.pdf", "jquery.txt", "mootools.xls", "angular.pdf", "emberjs.doc", "jetty.pdf", "spring.doc", "hibernate.pdf", "stratus.xmls", "iteye.txt", "csdn.txt", "netty.txt", "mina.doc"]);
 
-    return file_name.toLowerCase() + "." + suffix;
+    return file_name;
 }
 
 function random_boolean() {
