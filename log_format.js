@@ -196,7 +196,8 @@ function gen_aie_and_gw_log(app, sig_id, data) {
         req_dst: data.dst_ip,
         req_spt: data.src_port,
         req_dpt: data.dst_port,
-        req_dn: data.hostname
+        req_dn: data.hostname,
+        activity: "DESTROY"
     });
 
     var gw_log = gen_gw_log(gw_data);

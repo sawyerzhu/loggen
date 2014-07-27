@@ -6,7 +6,8 @@ module.exports = {
     "activity_path": {
         "upload": ["100000", "100001"],
         "preview": ["100000", "100004"],
-        "preview": ["100000", "100003"],
+        "delete": ["100000", "100003"],
+        "upload_preview_download": ["100000", "100004", "100002"],
         "download": ["100000", "100004", "100002"]
     },
     "activities": require('./common_activity.js')('user_token')
