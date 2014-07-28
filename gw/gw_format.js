@@ -5,7 +5,7 @@ var random_data = require('../random_data');
 exports.gw_format = {
     "timestamp": {
         "type": "date",
-        "format": "MMM DD HH:MI:SS",
+        "format": "MMM DD HH24:MI:SS",
         "prefix": ""
     },
     "daemon": {

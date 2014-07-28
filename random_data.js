@@ -388,49 +388,81 @@ var app_id_2_app = {
     "10001": {
         "appname": "gmail",
         "hostname": "www.gmail.com",
-        "category": "mail"
+        "category": "mail",
+        "activity_path": {
+            "login": ["100000"]
+        },
+        "activities": require('./aie/l2_common_activity.js')('user_token')
     },
 
     "10002": {
         "appname": "hotmail",
         "hostname": "www.hotmail.com",
-        "category": "mail"
+        "category": "mail",
+        "activity_path": {
+            "login": ["100000"]
+        },
+        "activities": require('./aie/l2_common_activity.js')('user_token')
     },
 
     '10004': {
         "appname": "yahoo-mail",
         "hostname": "www.yahoo-mail.com",
-        "category": "mail"
+        "category": "mail",
+        "activity_path": {
+            "login": ["100000"]
+        },
+        "activities": require('./aie/l2_common_activity.js')('user_token')
     },
 
     '20001': {
         "appname": "skype",
         "hostname": "www.skype.com",
-        "category": "im"
+        "category": "im",
+        "activity_path": {
+            "login": ["100000"]
+        },
+        "activities": require('./aie/l2_common_activity.js')('user_token')
     },
 
     '20002': {
         "appname": "gtalk",
         "hostname": "www.gtalk.com",
-        "category": "im"
+        "category": "im",
+        "activity_path": {
+            "login": ["100000"]
+        },
+        "activities": require('./aie/l2_common_activity.js')('user_token')
     },
 
     '30001': {
         "appname": "facebook",
         "hostname": "www.facebook.com",
-        "category": "social"
+        "category": "social",
+        "activity_path": {
+            "login": ["100000"]
+        },
+        "activities": require('./aie/l2_common_activity.js')('user_token')
     },
 
     '30002': {
         "appname": "twitter",
         "hostname": "www.twitter.com",
-        "category": "social"
+        "category": "social",
+        "activity_path": {
+            "login": ["100000"]
+        },
+        "activities": require('./aie/l2_common_activity.js')('user_token')
     },
 
     '30003': {
         "appname": "youtube",
         "hostname": "www.youtube.com",
-        "category": "social"
+        "category": "social",
+        "activity_path": {
+            "login": ["100000"]
+        },
+        "activities": require('./aie/l2_common_activity.js')('user_token')
     }
 }
 

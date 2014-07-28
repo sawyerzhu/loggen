@@ -9,7 +9,7 @@ var app_id_2_app = random_data.app_id_2_app;
 exports.aie_head = {
     "timestamp": {
         "type": "date",
-        "format": "YYYY-MM-DDTHH:MI:SS",
+        "format": "YYYY-MM-DDTHH24:MI:SS",
         "prefix": ""
     },
 

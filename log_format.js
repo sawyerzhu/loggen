@@ -191,7 +191,7 @@ function gen_aie_and_gw_log(app, sig_id, data) {
     var aie_log = gen_aie_log(app, sig_id, data);
 
     gw_data = _.extend(_.clone(data), {
-        timestamp: (new Date(Date.parse(data.timestamp))).toFormat("MMM DD HH:MI:SS"),
+        timestamp: (new Date(Date.parse(data.timestamp))).toFormat("MMM DD HH24:MI:SS"),
         req_src: data.src_ip,
         req_dst: data.dst_ip,
         req_spt: data.src_port,
@@ -210,6 +210,10 @@ function gen_aie_and_gw_log(app, sig_id, data) {
 
 function gen_aie_acvitity_path_log(app, activity_path, data) {
     var logs = [];
+
+    if (!activity_path) {
+        console.log(JSON.stringify(app));
+    }
 
     for (var i = 0; i < activity_path.length; i++) {
         logs.push(gen_aie_and_gw_log(app, activity_path[i], data));
