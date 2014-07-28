@@ -17,6 +17,7 @@ var app_id_2_app = {
         "hostname": "www.gdrive.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -31,6 +32,7 @@ var app_id_2_app = {
         "hostname": "www.sharefile.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -45,6 +47,7 @@ var app_id_2_app = {
         "hostname": "www.sugarsync.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -59,6 +62,7 @@ var app_id_2_app = {
         "hostname": "www.dropsend.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -73,6 +77,7 @@ var app_id_2_app = {
         "hostname": "www.photobucket.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -87,6 +92,7 @@ var app_id_2_app = {
         "hostname": "www.skypath.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -97,10 +103,11 @@ var app_id_2_app = {
     },
 
     "9": {
-        "appname": "mozy",
+        "appname": "Mozy",
         "hostname": "www.mozy.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -115,6 +122,7 @@ var app_id_2_app = {
         "hostname": "www.syncplicity.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -129,6 +137,7 @@ var app_id_2_app = {
         "hostname": "www.hightail.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -139,10 +148,11 @@ var app_id_2_app = {
     },
 
     "12": {
-        "appname": "SyncPlicity",
-        "hostname": "www.syncplicity.com",
+        "appname": "icloud",
+        "hostname": "www.icloud.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -157,6 +167,7 @@ var app_id_2_app = {
         "hostname": "www.msskydrive.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -171,6 +182,7 @@ var app_id_2_app = {
         "hostname": "www.hightail.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -185,6 +197,7 @@ var app_id_2_app = {
         "hostname": "www.wuala.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -199,6 +212,7 @@ var app_id_2_app = {
         "hostname": "www.ngnyte.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -213,6 +227,7 @@ var app_id_2_app = {
         "hostname": "www.wetransfer.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -227,6 +242,7 @@ var app_id_2_app = {
         "hostname": "www.accelion.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -241,6 +257,7 @@ var app_id_2_app = {
         "hostname": "www.livedrive.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -255,6 +272,7 @@ var app_id_2_app = {
         "hostname": "www.jungledisk.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -269,6 +287,93 @@ var app_id_2_app = {
         "hostname": "www.onedrive.com",
         "category": "storage",
         "activity_path": {
+            "login": ['100000'],
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "delete": ["100000", "100003"],
+            "upload_preview_download": ["100000", "100004", "100002"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
+    },
+
+    '22': {
+        "appname": 'Squareup',
+        "hostname": 'www.squareup.com',
+        "category": "sales",
+        "activity_path": {
+            "login": ["100000"],
+            "get": ["100000", "100001"],
+            "put": ["100000", "100002"],
+            "post": ["100000", "100003"],
+            "delete": ["100000", "100004"]
+        },
+        "activities": require('./aie/l2_common_activity.js')('user_token')
+    },
+
+    '23': {
+        "appname": 'Expensify',
+        "hostname": 'www.expensify.com',
+        "category": "finace",
+        "activity_path": {
+            "login": ["100000"],
+            "get": ["100000", "100001"],
+            "put": ["100000", "100002"],
+            "post": ["100000", "100003"],
+            "delete": ["100000", "100004"]
+        },
+        "activities": require('./aie/l2_common_activity.js')('user_token')
+    },
+
+    '24': {
+        "appname": 'Constcontacts',
+        "hostname": 'www.constcontacts.com',
+        "category": "sales",
+        "activity_path": {
+            "login": ["100000"],
+            "get": ["100000", "100001"],
+            "put": ["100000", "100002"],
+            "post": ["100000", "100003"],
+            "delete": ["100000", "100004"]
+        },
+        "activities": require('./aie/l2_common_activity.js')('user_token')
+    },
+
+    '25': {
+        "appname": 'Concursolutions',
+        "hostname": 'www.concursolutions.com',
+        "category": "finace",
+        "activity_path": {
+            "login": ["100000"],
+            "get": ["100000", "100001"],
+            "put": ["100000", "100002"],
+            "post": ["100000", "100003"],
+            "delete": ["100000", "100004"]
+        },
+        "activities": require('./aie/l2_common_activity.js')('user_token')
+    },
+
+    '26': {
+        "appname": 's3',
+        "hostname": 'www.s3.com',
+        "category": "storage",
+        "activity_path": {
+            "login": ['100000'],
+            "upload": ["100000", "100001"],
+            "preview": ["100000", "100004"],
+            "delete": ["100000", "100003"],
+            "upload_preview_download": ["100000", "100004", "100002"],
+            "download": ["100000", "100004", "100002"]
+        },
+        "activities": require('./aie/common_activity.js')('user_token')
+    },
+
+    '27': {
+        "appname": 'AWS Glacier',
+        "hostname": 'www.glacier.com',
+        "category": "finace",
+        "activity_path": {
+            "login": ['100000'],
             "upload": ["100000", "100001"],
             "preview": ["100000", "100004"],
             "delete": ["100000", "100003"],
@@ -331,13 +436,17 @@ var app_id_2_app = {
 
 var user_info = {
     "jackson@gmail.com": {
-        "unsub_emails": ['jackson@yahoo.com', 'jackson@abc.com'],
+        "unsub_emails": ['jackson@yahoo.com',  'jackson@hotmail.com'],
         "devices": [{
                 "mac": 'ja:ck:so:n0:00:00'
             },
 
             {
                 "mac": 'ja:ck:so:n1:00:00'
+            },
+
+            {
+                "mac": 'ja:ck:so:n2:00:00'
             }
         ]
     },
@@ -355,7 +464,7 @@ var user_info = {
     },
 
     "liam@gmail.com": {
-        "unsub_emails": ['liam@yahoo.com', 'liam@abc.com'],
+        "unsub_emails": ['liam@yahoo.com', 'liam@sina.com'],
         "devices": [{
                 "mac": 'li:am:00:00:00:00'
             },
@@ -367,7 +476,7 @@ var user_info = {
     },
 
     "lucas@gmail.com": {
-        "unsub_emails": ['lucas@yahoo.com', 'lucas@abc.com'],
+        "unsub_emails": ['lucas@hotmail.com', 'lucas@abc.com'],
         "devices": [{
                 "mac": 'lu:ca:s0:00:00:00'
             },
@@ -391,7 +500,7 @@ var user_info = {
     },
 
     "eric@gmail.com": {
-        "unsub_emails": ['eric@yahoo.com', 'eric@abc.com'],
+        "unsub_emails": ['eric@hotmail.com', 'eric@abc.com'],
         "devices": [{
                 "mac": 'er:ic:00:00:00:00'
             },
@@ -403,7 +512,7 @@ var user_info = {
     },
 
     "david@gmail.com": {
-        "unsub_emails": ['david@yahoo.com', 'david@abc.com'],
+        "unsub_emails": ['david@yahoo.com', 'david@uvw.com'],
         "devices": [{
                 "mac": 'da:vi:d0:00:00:00'
             },
@@ -415,7 +524,7 @@ var user_info = {
     },
 
     "emma@gmail.com": {
-        "unsub_emails": ['emma@yahoo.com', 'emma@abc.com'],
+        "unsub_emails": ['emma@yahoo.com', 'emma@xyz.com'],
         "devices": [{
                 "mac": 'em:ma:00:00:00:00'
             },
@@ -427,7 +536,7 @@ var user_info = {
     },
 
     "mary@gmail.com": {
-        "unsub_emails": ['mary@yahoo.com', 'mary@abc.com'],
+        "unsub_emails": ['mary@yahoo.com', 'mary@mnt.com'],
         "devices": [{
                 "mac": 'ma:ry:00:00:00:00'
             },
@@ -439,7 +548,7 @@ var user_info = {
     },
 
     "susan@gmail.com": {
-        "unsub_emails": ['susan@yahoo.com', 'susan@abc.com'],
+        "unsub_emails": ['susan@yahoo.com', 'susan@rst.com'],
         "devices": [{
                 "mac": 'su:sa:n0:00:00:00'
             },
@@ -451,7 +560,7 @@ var user_info = {
     },
 
     "jacob@gmail.com": {
-        "unsub_emails": ['jacob@yahoo.com', 'jacob@abc.com'],
+        "unsub_emails": ['jacob@yahoo.com', 'jacob@efg.com'],
         "devices": [{
                 "mac": 'ja:co:b0:00:00:00'
             },
@@ -463,7 +572,7 @@ var user_info = {
     },
 
     "ryan@gmail.com": {
-        "unsub_emails": ['ryan@yahoo.com', 'ryan@abc.com'],
+        "unsub_emails": ['ryan@yahoo.com', 'ryan@hij.com'],
         "devices": [{
                 "mac": 'ry:an:00:00:00:00'
             },
@@ -475,7 +584,7 @@ var user_info = {
     },
 
     "alexander@gmail.com": {
-        "unsub_emails": ['alexander@yahoo.com', 'alexander@abc.com'],
+        "unsub_emails": ['alexander@yahoo.com', 'alexander@ij.com'],
         "devices": [{
                 "mac": 'al:ex:an:de:r0:00'
             },
@@ -487,7 +596,7 @@ var user_info = {
     },
 
     "james@gmail.com": {
-        "unsub_emails": ['james@yahoo.com', 'james@abc.com'],
+        "unsub_emails": ['james@yahoo.com', 'james@mn.com'],
         "devices": [{
                 "mac": 'ja:me:s0:00:00:00'
             },
@@ -499,7 +608,7 @@ var user_info = {
     },
 
     "robert@gmail.com": {
-        "unsub_emails": ['robert@yahoo.com', 'robert@abc.com'],
+        "unsub_emails": ['robert@yahoo.com', 'robert@ppt.com'],
         "devices": [{
                 "mac": 'ro:be:rt:00:00:00'
             },
@@ -511,7 +620,7 @@ var user_info = {
     },
 
     "william@gmail.com": {
-        "unsub_emails": ['william@yahoo.com', 'william@abc.com'],
+        "unsub_emails": ['william@yahoo.com', 'william@doc.com'],
         "devices": [{
                 "mac": 'wi:ll:ia:m0:00:00'
             },
@@ -523,7 +632,7 @@ var user_info = {
     },
 
     "jack@gmail.com": {
-        "unsub_emails": ['jack@yahoo.com', 'jack@abc.com'],
+        "unsub_emails": ['jack@yahoo.com', 'jack@xls.com'],
         "devices": [{
                 "mac": 'ja:ck:00:00:00:00'
             },
@@ -535,7 +644,7 @@ var user_info = {
     },
 
     "simon@gmail.com": {
-        "unsub_emails": ['simon@yahoo.com', 'simon@abc.com'],
+        "unsub_emails": ['simon@yahoo.com', 'simon@pdf.com'],
         "devices": [{
                 "mac": 'si:mo:n0:00:00:00'
             },
@@ -559,7 +668,7 @@ var user_info = {
     },
 
     "olivia@gmail.com": {
-        "unsub_emails": ['olivia@yahoo.com', 'olivia@abc.com'],
+        "unsub_emails": ['olivia@yahoo.com', 'olivia@rst.com'],
         "devices": [{
                 "mac": 'ol:iv:ia:00:00:00'
             },
@@ -571,7 +680,7 @@ var user_info = {
     },
 
     "john@gmail.com": {
-        "unsub_emails": ['john@yahoo.com', 'john@abc.com'],
+        "unsub_emails": ['john@yahoo.com', 'john@req.com'],
         "devices": [{
                 "mac": 'jo:hn:00:00:00:00'
             },
@@ -583,7 +692,7 @@ var user_info = {
     },
 
     "daniel@gmail.com": {
-        "unsub_emails": ['daniel@yahoo.com', 'daniel@abc.com'],
+        "unsub_emails": ['daniel@yahoo.com', 'daniel@rsp.com', "daniel@inbox.com"],
         "devices": [{
                 "mac": 'da:ni:el:00:00:00'
             },
@@ -607,13 +716,17 @@ var user_info = {
     },
 
     "julia@gmail.com": {
-        "unsub_emails": ['julia@yahoo.com', 'julia@abc.com'],
+        "unsub_emails": ['julia@yahoo.com', 'julia@abc.com', "julia@yeah.net"],
         "devices": [{
                 "mac": 'ju:li:a0:00:00:00'
             },
 
             {
                 "mac": 'ju:li:a1:00:00:00'
+            },
+
+            {
+                "mac": 'ju:li:a2:00:00:00'
             }
         ]
     }

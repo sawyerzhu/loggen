@@ -10,14 +10,18 @@ var log_format = require('./log_format');
 var udp = require('./transport/udp');
 var redis = require('./transport/redis');
 
+var aie_logs = [];
+var gw_logs = [];
 
 function sendGwLog(log) {
     udp_client.send(log);
+    // gw_logs.push(log);
     console.log(log);
 }
 
 function sendAieLog(log) {
     redis_client.rpush("aie", log);
+    // aie_logs.push(log);
     console.log(log);
 }
 
@@ -53,7 +57,7 @@ while (startDate.isBefore(endDate)) {
         var user_info = random_data.random_user_info(all_user_keys[m]);
 
         for (var n = 0; n < user_info.devices.length; n++) {
-            var device = user_info.devices[n]
+            var device = user_info.devices[n];
 
             for (var i = 0; i < 3; i++) {
 
@@ -70,7 +74,6 @@ while (startDate.isBefore(endDate)) {
                     },
 
                     "req_mac": function() {
-
                         return device.mac;
                     }
                 };
