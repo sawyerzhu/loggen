@@ -664,7 +664,7 @@ var user_info = {
     },
 
     "jack@gmail.com": {
-        "unsub_emails": ['jack@yahoo.com', 'jack@xls.com'],
+        "unsub_emails": ['jack@abc.com', 'jack@xls.com'],
         "devices": [{
                 "mac": 'ja:ck:00:00:00:00'
             },
