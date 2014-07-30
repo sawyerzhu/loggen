@@ -46,7 +46,6 @@ var AIE_LOG_HEAD_FORMAT = (function() {
     return obj;
 })();
 
-
 function get_aie_log_format(activity_obj) {
     var copy_new = _.clone(AIE_LOG_HEAD_FORMAT);
     copy_new.activity.format =  activity_obj;
@@ -54,7 +53,7 @@ function get_aie_log_format(activity_obj) {
     return copy_new;
 }
 
-function get_filed_val(log_format, data, key) {
+function get_field_val(log_format, data, key) {
     var field = log_format[key];
 
     var val = null;
@@ -101,7 +100,7 @@ function gen_obj_val(log_format, field, data) {
         } else if (child_field.type === 'object_array') {
             sub_obj[child_field.key] = [gen_obj_val(log_format, child_field, data)];
         } else {
-            sub_obj[child_field.key] = get_filed_val(object_format, data, child_key);
+            sub_obj[child_field.key] = get_field_val(object_format, data, child_key);
         }
 
         data[child_key] = sub_obj[child_field.key];
@@ -123,7 +122,7 @@ function gen_log(log_format, data) {
 
             val = JSON.stringify(sub_obj);
         } else {
-            val = get_filed_val(log_format, data, key);
+            val = get_field_val(log_format, data, key);
 
             data[key] = val;
         }
@@ -144,6 +143,7 @@ function gen_aie_log(app, sig_id, data) {
     if (!app.activities || !app.activities['' + sig_id]) {
         throw "Unknow app(" + app.appname + ") with sig id: " + sig_id;
     }
+    
     var sig_info = app.activities['' + sig_id];
 
     var obj = {
@@ -161,7 +161,7 @@ function gen_aie_log(app, sig_id, data) {
             "key": "activity",
             "type": "string",
             "default": null,
-             "format": null
+            "format": null
         }
     };
 
@@ -169,12 +169,11 @@ function gen_aie_log(app, sig_id, data) {
         obj[key] = {
             "type": "string",
             "default": null,
-             "format": null
+            "format": null
         };
 
         _.extend(obj[key], sig_info.keys[key]);
     }
-
 
     _.extend(data, {
         sig_id: sig_id,
