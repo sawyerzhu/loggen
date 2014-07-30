@@ -19,6 +19,10 @@ udp_client.prototype.send = function(msg, cb) {
             console.log(err);
         }
 
+        if (msg.length != bytes) {
+            console.log("aa:" + bytes);
+        }
+        
         complete_count++;
 
         cb && cb(err, bytes);

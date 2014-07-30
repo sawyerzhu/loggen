@@ -17,7 +17,7 @@ redis_client.prototype.rpush = function(key, msg) {
 
 redis_client.prototype.close = function() {
     this.client.quit();
-    console.log("Redis send log count: " + sned_count);
+    console.log("Redis send log count: " + send_count);
 }
 
 exports.redis_client = redis_client;
