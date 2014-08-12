@@ -143,13 +143,18 @@ function gen_aie_log(app, sig_id, data) {
     if (!app.activities || !app.activities['' + sig_id]) {
         throw "Unknow app(" + app.appname + ") with sig id: " + sig_id;
     }
-    
+
     var sig_info = app.activities['' + sig_id];
 
     var obj = {
         "appname": {
             "type": "string",
             "key": "appname"
+        },
+
+        "category": {
+            "type": "string",
+            "key": "catebory"
         },
 
         "login_name": {
