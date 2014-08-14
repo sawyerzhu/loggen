@@ -154,7 +154,7 @@ function gen_aie_log(app, sig_id, data) {
 
         "category": {
             "type": "string",
-            "key": "catebory"
+            "key": "category"
         },
 
         "login_name": {

@@ -329,7 +329,7 @@ function abnormal_b(startDate) {
 
     var device = user_info.devices[0];
 
-    var app = random_data.random_app('21');
+    var app = random_data.random_app('2');
 
     for (var i = 0; i < 30; i++) {
 
@@ -539,17 +539,16 @@ function abnormal_e(startDate) {
     sendAieActivityPathLog(logs);
 }
 
-normal_a(new Date(2014, 7, 1, 8, 0, 0), new Date(2014, 8, 1, 8, 0, 0));
-normal_b(new Date(2014, 7, 1, 8, 0, 0), new Date(2014, 8, 1, 8, 0, 0));
-normal_c(new Date(2014, 7, 1, 8, 0, 0), new Date(2014, 8, 1, 8, 0, 0));
-normal_d(new Date(2014, 7, 1, 8, 0, 0), new Date(2014, 8, 1, 8, 0, 0));
-normal_e(new Date(2014, 7, 1, 8, 0, 0), new Date(2014, 8, 1, 8, 0, 0));
-
-abnormal_a(new Date(2014, 7, 6, 8, 0, 0));
-abnormal_b(new Date(2014, 7, 13, 8, 0, 0));
-abnormal_c(new Date(2014, 7, 20, 8, 0, 0));
-abnormal_d(new Date(2014, 7, 11, 8, 0, 0));
-abnormal_e(new Date(2014, 7, 26, 8, 0, 0));
+normal_a(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+normal_b(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+normal_c(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+normal_d(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+normal_e(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+abnormal_a(new Date(2014, 6, 6, 8, 0, 0));
+abnormal_b(new Date(2014, 6, 13, 8, 0, 0));
+abnormal_c(new Date(2014, 6, 20, 8, 0, 0));
+abnormal_d(new Date(2014, 6, 11, 8, 0, 0));
+abnormal_e(new Date(2014, 6, 26, 8, 0, 0));
 
 udp_client.close();
 redis_client.close();
