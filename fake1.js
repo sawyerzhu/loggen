@@ -12,8 +12,10 @@ var redis = require('./transport/redis');
 
 function sendGwLog(log) {
     redis_client.rpush("gw", log);
-    // udp_client.send(log);
+
     console.log(log);
+
+    // udp_client.send(log);
 }
 
 function sendAieLog(log) {

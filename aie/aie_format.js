@@ -52,6 +52,16 @@ exports.aie_head = {
         "default": 1
     },
 
+    "log_id": {
+        "type": "int",
+        "default": 1
+    },
+
+    "log_seq_num": {
+        "type": "int",
+        "default": '0'
+    },
+
     "activity": {
         "type": "object"
     }
