@@ -15,7 +15,7 @@ var app_id_2_app = {
     "3": {
         "appname": "GoogleDrive",
         "hostname": "www.gdrive.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -30,7 +30,7 @@ var app_id_2_app = {
     "4": {
         "appname": "ShareFile",
         "hostname": "www.sharefile.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -45,7 +45,7 @@ var app_id_2_app = {
     "5": {
         "appname": "SugarSync",
         "hostname": "www.sugarsync.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -60,7 +60,7 @@ var app_id_2_app = {
     "6": {
         "appname": "DropSend",
         "hostname": "www.dropsend.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -75,7 +75,7 @@ var app_id_2_app = {
     "7": {
         "appname": "PhotoBucket",
         "hostname": "www.photobucket.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -90,7 +90,7 @@ var app_id_2_app = {
     "8": {
         "appname": "SkyPath",
         "hostname": "www.skypath.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -105,7 +105,7 @@ var app_id_2_app = {
     "9": {
         "appname": "Mozy",
         "hostname": "www.mozy.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -120,7 +120,7 @@ var app_id_2_app = {
     "10": {
         "appname": "SyncPlicity",
         "hostname": "www.syncplicity.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -135,7 +135,7 @@ var app_id_2_app = {
     "11": {
         "appname": "Hightail",
         "hostname": "www.hightail.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -150,7 +150,7 @@ var app_id_2_app = {
     "12": {
         "appname": "icloud",
         "hostname": "www.icloud.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -165,7 +165,7 @@ var app_id_2_app = {
     "13": {
         "appname": "MicrosoftSkyDrive",
         "hostname": "www.msskydrive.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -180,7 +180,7 @@ var app_id_2_app = {
     "14": {
         "appname": "HighTail",
         "hostname": "www.hightail.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -195,7 +195,7 @@ var app_id_2_app = {
     "15": {
         "appname": "Wuala",
         "hostname": "www.wuala.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -210,7 +210,7 @@ var app_id_2_app = {
     "16": {
         "appname": "Egnyte",
         "hostname": "www.ngnyte.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -225,7 +225,7 @@ var app_id_2_app = {
     "17": {
         "appname": "WeTransfer",
         "hostname": "www.wetransfer.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -240,7 +240,7 @@ var app_id_2_app = {
     "18": {
         "appname": "Accelion",
         "hostname": "www.accelion.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -255,7 +255,7 @@ var app_id_2_app = {
     "19": {
         "appname": "LiveDrive",
         "hostname": "www.livedrive.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -270,7 +270,7 @@ var app_id_2_app = {
     "20": {
         "appname": "JungleDisk",
         "hostname": "www.jungledisk.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -285,7 +285,7 @@ var app_id_2_app = {
     "21": {
         "appname": "OneDrive",
         "hostname": "www.onedrive.com",
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -300,7 +300,7 @@ var app_id_2_app = {
     '22': {
         "appname": 'Squareup',
         "hostname": 'www.squareup.com',
-        "category": "sales",
+        "category": ["sales"],
         "activity_path": {
             "login": ["100000"],
             "get": ["100000", "100001"],
@@ -314,7 +314,7 @@ var app_id_2_app = {
     '23': {
         "appname": 'Expensify',
         "hostname": 'www.expensify.com',
-        "category": "finace",
+        "category": ["finace"],
         "activity_path": {
             "login": ["100000"],
             "get": ["100000", "100001"],
@@ -328,7 +328,7 @@ var app_id_2_app = {
     '24': {
         "appname": 'Constcontacts',
         "hostname": 'www.constcontacts.com',
-        "category": "sales",
+        "category": ["sales"],
         "activity_path": {
             "login": ["100000"],
             "get": ["100000", "100001"],
@@ -342,7 +342,7 @@ var app_id_2_app = {
     '25': {
         "appname": 'Concursolutions',
         "hostname": 'www.concursolutions.com',
-        "category": "finace",
+        "category": ["finace"],
         "activity_path": {
             "login": ["100000"],
             "get": ["100000", "100001"],
@@ -356,7 +356,7 @@ var app_id_2_app = {
     '26': {
         "appname": 's3',
         "hostname": 'www.s3.com',
-        "category": "storage",
+        "category": ["storage"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -371,7 +371,7 @@ var app_id_2_app = {
     '27': {
         "appname": 'AWS Glacier',
         "hostname": 'www.glacier.com',
-        "category": "finace",
+        "category": ["finace"],
         "activity_path": {
             "login": ['100000'],
             "upload": ["100000", "100001"],
@@ -388,7 +388,7 @@ var app_id_2_app = {
     "10001": {
         "appname": "gmail",
         "hostname": "www.gmail.com",
-        "category": "mail",
+        "category": ["mail"],
         "activity_path": {
             "login": ["100000"]
         },
@@ -398,7 +398,7 @@ var app_id_2_app = {
     "10002": {
         "appname": "hotmail",
         "hostname": "www.hotmail.com",
-        "category": "mail",
+        "category": ["mail"],
         "activity_path": {
             "login": ["100000"]
         },
@@ -408,7 +408,7 @@ var app_id_2_app = {
     '10004': {
         "appname": "yahoo-mail",
         "hostname": "www.yahoo-mail.com",
-        "category": "mail",
+        "category": ["mail"],
         "activity_path": {
             "login": ["100000"]
         },
@@ -418,7 +418,7 @@ var app_id_2_app = {
     '20001': {
         "appname": "skype",
         "hostname": "www.skype.com",
-        "category": "im",
+        "category": ["im"],
         "activity_path": {
             "login": ["100000"]
         },
@@ -428,7 +428,7 @@ var app_id_2_app = {
     '20002': {
         "appname": "gtalk",
         "hostname": "www.gtalk.com",
-        "category": "im",
+        "category": ["im"],
         "activity_path": {
             "login": ["100000"]
         },
@@ -438,7 +438,7 @@ var app_id_2_app = {
     '30001': {
         "appname": "facebook",
         "hostname": "www.facebook.com",
-        "category": "social",
+        "category": ["social"],
         "activity_path": {
             "login": ["100000"]
         },
@@ -448,7 +448,7 @@ var app_id_2_app = {
     '30002': {
         "appname": "twitter",
         "hostname": "www.twitter.com",
-        "category": "social",
+        "category": ["social"],
         "activity_path": {
             "login": ["100000"]
         },
@@ -458,7 +458,7 @@ var app_id_2_app = {
     '30003': {
         "appname": "youtube",
         "hostname": "www.youtube.com",
-        "category": "social",
+        "category": ["social"],
         "activity_path": {
             "login": ["100000"]
         },

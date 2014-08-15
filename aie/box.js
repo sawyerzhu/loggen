@@ -5,7 +5,7 @@ function get_user_id(datas) {
 module.exports = {
     "appname": "Box",
     "hostname": "www.box.com",
-    "category": "storage",
+    "category": ["storage"],
     "activity_path": {
         "login": ["100000"],
         "upload": ["100000", "100001"],

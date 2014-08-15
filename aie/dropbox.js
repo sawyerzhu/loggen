@@ -2,7 +2,7 @@
 module.exports = {
     "appname": "Dropbox",
     "hostname": "www.dropbox.com",
-    "category": "storage",
+    "category": ["storage"],
     "activity_path": {
         "login": ['100000'],
         "upload": ["100000", "100001"],
