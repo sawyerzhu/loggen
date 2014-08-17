@@ -4,9 +4,9 @@ var send_count = 0;
 
 function redis_client(ip, port) {
     this.aie_list_key = "aie";
-    this.ip = ip || '54.84.177.105';
+    this.ip = ip || 'ds.stratusee.com';
     this.port = port || 6379;
-    this.client = client = redis.createClient(port, ip);
+    this.client = redis.createClient(port, ip);
 }
 
 redis_client.prototype.rpush = function(key, msg) {

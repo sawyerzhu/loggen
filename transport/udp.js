@@ -5,7 +5,7 @@ var complete_count = 0;
 var try_close_count = 0;
 
 function udp_client(ip, port) {
-    this.ip = ip || '54.84.177.105';
+    this.ip = ip || 'ds.stratusee.com';
     this.port = port || 514;
     this.client = dgram.createSocket("udp4");
 }
@@ -22,7 +22,7 @@ udp_client.prototype.send = function(msg, cb) {
         if (msg.length != bytes) {
             console.log("aa:" + bytes);
         }
-        
+
         complete_count++;
 
         cb && cb(err, bytes);
