@@ -36,7 +36,7 @@ function sendAieActivityPathLog(logs) {
     }
 }
 
-var host = '10.208.2.10';
+var host = 'localhost';
 var udp_client = new udp.udp_client(host, 514);
 var redis_client = new redis.redis_client(host, 6379);
 
@@ -541,16 +541,59 @@ function abnormal_e(startDate) {
     sendAieActivityPathLog(logs);
 }
 
-normal_a(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-normal_b(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-normal_c(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-normal_d(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-normal_e(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-abnormal_a(new Date(2014, 6, 6, 8, 0, 0));
-abnormal_b(new Date(2014, 6, 13, 8, 0, 0));
-abnormal_c(new Date(2014, 6, 20, 8, 0, 0));
-abnormal_d(new Date(2014, 6, 11, 8, 0, 0));
-abnormal_e(new Date(2014, 6, 26, 8, 0, 0));
+
+function abnormal_f(startDate) {
+    var user_info = random_data.random_user_info('susan@gmail.com');
+
+    var device = user_info.devices[0];
+
+    var app = random_data.random_app('1');
+
+
+    for (var i = 0; i < 100; i++) {
+
+        var date = startDate.clone();
+        date.addHours(random_data.random_int(0, 8));
+
+        var datas = {
+            "timestamp": function(log_format, data, key) {
+                return date.toFormat(log_format[key].format);
+            },
+
+            "login_name": function() {
+                return user_info.sub_email;
+            },
+
+            "req_mac": function() {
+                return device.mac;
+            },
+
+            'src_pub_ip': '54.85.200.153',
+
+            'dst_ip': '2.103.255.255',
+
+            "objs.size": 1024 * 1024 * random_data.random_int(8, 16),
+
+            "objs.type": "file"
+        };
+
+        var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app, 'download'), _.clone(datas));
+
+        sendAieActivityPathLog(logs);
+    }
+}
+
+// normal_a(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+// normal_b(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+// normal_c(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+// normal_d(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+// normal_e(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+// abnormal_a(new Date(2014, 6, 6, 8, 0, 0));
+// abnormal_b(new Date(2014, 6, 13, 8, 0, 0));
+// abnormal_c(new Date(2014, 6, 20, 8, 0, 0));
+// abnormal_d(new Date(2014, 6, 11, 8, 0, 0));
+// abnormal_e(new Date(2014, 6, 26, 8, 0, 0));
+abnormal_f(new Date(2014, 6, 30, 8, 0, 0));
 
 udp_client.close();
 redis_client.close();
