@@ -17,12 +17,12 @@ var app_id_2_app = {
         "hostname": "www.gdrive.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -32,12 +32,12 @@ var app_id_2_app = {
         "hostname": "www.sharefile.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -47,12 +47,12 @@ var app_id_2_app = {
         "hostname": "www.sugarsync.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -62,12 +62,12 @@ var app_id_2_app = {
         "hostname": "www.dropsend.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -77,12 +77,12 @@ var app_id_2_app = {
         "hostname": "www.photobucket.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -92,12 +92,12 @@ var app_id_2_app = {
         "hostname": "www.skypath.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -107,12 +107,12 @@ var app_id_2_app = {
         "hostname": "www.mozy.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -122,12 +122,12 @@ var app_id_2_app = {
         "hostname": "www.syncplicity.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -137,12 +137,12 @@ var app_id_2_app = {
         "hostname": "www.hightail.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -152,12 +152,12 @@ var app_id_2_app = {
         "hostname": "www.icloud.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -167,12 +167,12 @@ var app_id_2_app = {
         "hostname": "www.msskydrive.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -182,12 +182,12 @@ var app_id_2_app = {
         "hostname": "www.hightail.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -197,12 +197,12 @@ var app_id_2_app = {
         "hostname": "www.wuala.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -212,12 +212,12 @@ var app_id_2_app = {
         "hostname": "www.ngnyte.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -227,12 +227,12 @@ var app_id_2_app = {
         "hostname": "www.wetransfer.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -242,12 +242,12 @@ var app_id_2_app = {
         "hostname": "www.accelion.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -257,12 +257,12 @@ var app_id_2_app = {
         "hostname": "www.livedrive.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -272,12 +272,12 @@ var app_id_2_app = {
         "hostname": "www.jungledisk.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -287,12 +287,12 @@ var app_id_2_app = {
         "hostname": "www.onedrive.com",
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -302,11 +302,11 @@ var app_id_2_app = {
         "hostname": 'www.squareup.com',
         "category": ["sales"],
         "activity_path": {
-            "login": ["100000"],
-            "get": ["100000", "100001"],
-            "put": ["100000", "100002"],
-            "post": ["100000", "100003"],
-            "delete": ["100000", "100004"]
+            "login": ["-100000"],
+            "get": ["-100000", "-100001"],
+            "put": ["-100000", "-100002"],
+            "post": ["-100000", "-100003"],
+            "delete": ["-100000", "-100004"]
         },
         "activities": require('./aie/l2_common_activity.js')('user_token')
     },
@@ -316,11 +316,11 @@ var app_id_2_app = {
         "hostname": 'www.expensify.com',
         "category": ["finace"],
         "activity_path": {
-            "login": ["100000"],
-            "get": ["100000", "100001"],
-            "put": ["100000", "100002"],
-            "post": ["100000", "100003"],
-            "delete": ["100000", "100004"]
+            "login": ["-100000"],
+            "get": ["-100000", "-100001"],
+            "put": ["-100000", "-100002"],
+            "post": ["-100000", "-100003"],
+            "delete": ["-100000", "-100004"]
         },
         "activities": require('./aie/l2_common_activity.js')('user_token')
     },
@@ -330,11 +330,11 @@ var app_id_2_app = {
         "hostname": 'www.constcontacts.com',
         "category": ["sales"],
         "activity_path": {
-            "login": ["100000"],
-            "get": ["100000", "100001"],
-            "put": ["100000", "100002"],
-            "post": ["100000", "100003"],
-            "delete": ["100000", "100004"]
+            "login": ["-100000"],
+            "get": ["-100000", "-100001"],
+            "put": ["-100000", "-100002"],
+            "post": ["-100000", "-100003"],
+            "delete": ["-100000", "-100004"]
         },
         "activities": require('./aie/l2_common_activity.js')('user_token')
     },
@@ -344,11 +344,11 @@ var app_id_2_app = {
         "hostname": 'www.concursolutions.com',
         "category": ["finace"],
         "activity_path": {
-            "login": ["100000"],
-            "get": ["100000", "100001"],
-            "put": ["100000", "100002"],
-            "post": ["100000", "100003"],
-            "delete": ["100000", "100004"]
+            "login": ["-100000"],
+            "get": ["-100000", "-100001"],
+            "put": ["-100000", "-100002"],
+            "post": ["-100000", "-100003"],
+            "delete": ["-100000", "-100004"]
         },
         "activities": require('./aie/l2_common_activity.js')('user_token')
     },
@@ -358,12 +358,12 @@ var app_id_2_app = {
         "hostname": 'www.s3.com',
         "category": ["storage"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -373,12 +373,12 @@ var app_id_2_app = {
         "hostname": 'www.glacier.com',
         "category": ["finace"],
         "activity_path": {
-            "login": ['100000'],
-            "upload": ["100000", "100001"],
-            "preview": ["100000", "100004"],
-            "delete": ["100000", "100003"],
-            "upload_preview_download": ["100000", "100004", "100002"],
-            "download": ["100000", "100004", "100002"]
+            "login": ['-100000'],
+            "upload": ["-100000", "-100001"],
+            "preview": ["-100000", "-100004"],
+            "delete": ["-100000", "-100003"],
+            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
     },
@@ -390,7 +390,7 @@ var app_id_2_app = {
         "hostname": "www.gmail.com",
         "category": ["mail"],
         "activity_path": {
-            "login": ["100000"]
+            "login": ["-100000"]
         },
         "activities": require('./aie/l2_common_activity.js')('user_token')
     },
@@ -400,7 +400,7 @@ var app_id_2_app = {
         "hostname": "www.hotmail.com",
         "category": ["mail"],
         "activity_path": {
-            "login": ["100000"]
+            "login": ["-100000"]
         },
         "activities": require('./aie/l2_common_activity.js')('user_token')
     },
@@ -410,7 +410,7 @@ var app_id_2_app = {
         "hostname": "www.yahoo-mail.com",
         "category": ["mail"],
         "activity_path": {
-            "login": ["100000"]
+            "login": ["-100000"]
         },
         "activities": require('./aie/l2_common_activity.js')('user_token')
     },
@@ -420,7 +420,7 @@ var app_id_2_app = {
         "hostname": "www.skype.com",
         "category": ["im"],
         "activity_path": {
-            "login": ["100000"]
+            "login": ["-100000"]
         },
         "activities": require('./aie/l2_common_activity.js')('user_token')
     },
@@ -430,7 +430,7 @@ var app_id_2_app = {
         "hostname": "www.gtalk.com",
         "category": ["im"],
         "activity_path": {
-            "login": ["100000"]
+            "login": ["-100000"]
         },
         "activities": require('./aie/l2_common_activity.js')('user_token')
     },
@@ -440,7 +440,7 @@ var app_id_2_app = {
         "hostname": "www.facebook.com",
         "category": ["social"],
         "activity_path": {
-            "login": ["100000"]
+            "login": ["-100000"]
         },
         "activities": require('./aie/l2_common_activity.js')('user_token')
     },
@@ -450,7 +450,7 @@ var app_id_2_app = {
         "hostname": "www.twitter.com",
         "category": ["social"],
         "activity_path": {
-            "login": ["100000"]
+            "login": ["-100000"]
         },
         "activities": require('./aie/l2_common_activity.js')('user_token')
     },
@@ -460,7 +460,7 @@ var app_id_2_app = {
         "hostname": "www.youtube.com",
         "category": ["social"],
         "activity_path": {
-            "login": ["100000"]
+            "login": ["-100000"]
         },
         "activities": require('./aie/l2_common_activity.js')('user_token')
     }

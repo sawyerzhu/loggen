@@ -2,8 +2,6 @@ var random = require("random-js")();
 
 var random_data = require('../random_data');
 
-var app_times = 100000;
-
 var app_id_2_app = random_data.app_id_2_app;
 
 exports.aie_head = {

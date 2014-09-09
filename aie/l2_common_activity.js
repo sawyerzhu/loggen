@@ -18,7 +18,7 @@ module.exports = function(user_id_key, get_user_id_func) {
     }
 
     return {
-        "100000": {
+        "-100000": {
             "name": "login",
             "keys": _.extend(_.clone(user_id_obj), {
 
@@ -37,7 +37,7 @@ module.exports = function(user_id_key, get_user_id_func) {
             })
         },
 
-        "100001": {
+        "-100001": {
             "name": "get",
             "keys": _.extend(_.clone(user_id_obj), {
 
@@ -56,7 +56,7 @@ module.exports = function(user_id_key, get_user_id_func) {
             })
         },
 
-        "100002": {
+        "-100002": {
             "name": "put",
             "keys": _.extend(_.clone(user_id_obj), {
 
@@ -75,7 +75,7 @@ module.exports = function(user_id_key, get_user_id_func) {
             })
         },
 
-        "100003": {
+        "-100003": {
             "name": "post",
             "keys": _.extend(_.clone(user_id_obj), {
 
@@ -94,7 +94,7 @@ module.exports = function(user_id_key, get_user_id_func) {
             })
         },
 
-        "100004": {
+        "-100004": {
             "name": "delete",
             "keys": _.extend(_.clone(user_id_obj), {
 
