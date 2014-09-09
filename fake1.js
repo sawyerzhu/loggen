@@ -572,7 +572,7 @@ function abnormal_f(startDate) {
 
             'dst_ip': '2.103.255.255',
 
-            "objs.size": 1024 * 1024 * random_data.random_int(8, 16),
+            "objs.size": 1024 * 1024 * random_data.random_int(128, 256),
 
             "objs.type": "file"
         };
@@ -583,16 +583,16 @@ function abnormal_f(startDate) {
     }
 }
 
-// normal_a(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-// normal_b(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-// normal_c(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-// normal_d(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-// normal_e(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-// abnormal_a(new Date(2014, 6, 6, 8, 0, 0));
-// abnormal_b(new Date(2014, 6, 13, 8, 0, 0));
-// abnormal_c(new Date(2014, 6, 20, 8, 0, 0));
-// abnormal_d(new Date(2014, 6, 11, 8, 0, 0));
-// abnormal_e(new Date(2014, 6, 26, 8, 0, 0));
+normal_a(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+normal_b(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+normal_c(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+normal_d(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+normal_e(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
+abnormal_a(new Date(2014, 6, 6, 8, 0, 0));
+abnormal_b(new Date(2014, 6, 13, 8, 0, 0));
+abnormal_c(new Date(2014, 6, 20, 8, 0, 0));
+abnormal_d(new Date(2014, 6, 11, 8, 0, 0));
+abnormal_e(new Date(2014, 6, 26, 8, 0, 0));
 abnormal_f(new Date(2014, 6, 30, 8, 0, 0));
 
 udp_client.close();
