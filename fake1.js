@@ -583,17 +583,42 @@ function abnormal_f(startDate) {
     }
 }
 
-normal_a(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-normal_b(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-normal_c(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-normal_d(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-normal_e(new Date(2014, 6, 1, 8, 0, 0), new Date(2014, 7, 1, 8, 0, 0));
-abnormal_a(new Date(2014, 6, 6, 8, 0, 0));
-abnormal_b(new Date(2014, 6, 13, 8, 0, 0));
-abnormal_c(new Date(2014, 6, 20, 8, 0, 0));
-abnormal_d(new Date(2014, 6, 11, 8, 0, 0));
-abnormal_e(new Date(2014, 6, 26, 8, 0, 0));
-abnormal_f(new Date(2014, 6, 30, 8, 0, 0));
+[6, 7, 8, 9, 10, 11].forEach(function(month) {
+    var max_day = 30;
+
+    if (month == 6 || month == 7 || month == 9 || month == 11) {
+        max_day = 31;
+    }
+
+    var day_cache = {};
+
+    normal_a(new Date(2014, month, 1, 8, 0, 0), new Date(2014, month, max_day, 8, 0, 0));
+    normal_b(new Date(2014, month, 1, 8, 0, 0), new Date(2014, month, max_day, 8, 0, 0));
+    normal_c(new Date(2014, month, 1, 8, 0, 0), new Date(2014, month, max_day, 8, 0, 0));
+    normal_d(new Date(2014, month, 1, 8, 0, 0), new Date(2014, month, max_day, 8, 0, 0));
+    normal_e(new Date(2014, month, 1, 8, 0, 0), new Date(2014, month, max_day, 8, 0, 0));
+
+    abnormal_a(new Date(2014, month, getRandomDay(max_day, day_cache), 8, 0, 0));
+    abnormal_b(new Date(2014, month, getRandomDay(max_day, day_cache), 8, 0, 0));
+    abnormal_c(new Date(2014, month, getRandomDay(max_day, day_cache), 8, 0, 0));
+    abnormal_d(new Date(2014, month, getRandomDay(max_day, day_cache), 8, 0, 0));
+    abnormal_e(new Date(2014, month, getRandomDay(max_day, day_cache), 8, 0, 0));
+    abnormal_f(new Date(2014, month, getRandomDay(max_day, day_cache), 8, 0, 0));
+});
+
+
+function getRandomDay(max_day, day_cache) {
+    var day = random_data.random_int(1, max_day);
+
+    while(day_cache['' + day]) {
+        day = random_data.random_int(1, max_day);
+    }
+
+    day_cache['' + day] = true;
+
+    return day;
+}
+
 
 udp_client.close();
 redis_client.close();
