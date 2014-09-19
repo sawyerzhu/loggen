@@ -34,15 +34,17 @@ exports.gw_format = {
         "type": "string",
         "default": "GW20000001"
     },
-    "src_public_ip": {
-        "type": "ip",
-        "default": function() {
-            return random_data.random_public_ip();
-        }
-    },
+
     "orig": {
         "type": "string",
         "default": "ORIG:"
+    },
+    "src_public_ip": {
+        "type": "ip",
+        "prefix": " EDGE=",
+        "default": function() {
+            return random_data.random_public_ip();
+        }
     },
     "req_src": {
         "type": "ip",
@@ -58,7 +60,7 @@ exports.gw_format = {
     },
     "req_mac": {
         "type": "mac",
-        "prefix": " MAC="
+        "prefix": " SMAC="
     },
     "req_proto": {
         "type": "string",

@@ -42,7 +42,7 @@ var redis_client = new redis.redis_client(host, 6379);
 var args = process.argv.slice(2);
 
 var startDate = new Date(Date.parse('2014-01-01T00:00:00'));
-var endDate = new Date(Date.parse('2014-08-31T00:00:00'));
+var endDate = new Date(Date.parse('2014-01-02T00:00:00'));
 
 while (startDate.isBefore(endDate)) {
 
@@ -51,7 +51,7 @@ while (startDate.isBefore(endDate)) {
         var date = new Date(startDate.toFormat('YYYY-MM-DDTHH:MI:SS'));
         date.addHours(random_data.random_int(1, 15));
 
-        var user_info = random_data.random_user_info();
+        var user_info = random_data.random_user_info('olivia@gmail.com');
 
 
         var datas = {
@@ -74,10 +74,14 @@ while (startDate.isBefore(endDate)) {
             }
         };
 
-        var gw_log = log_format.gen_gw_log(_.clone(datas));
-        sendGwLog(gw_log);
+        datas1 = _.clone(datas);
+        datas1.login_name = user_info.sub_email;
 
         var app = random_data.random_app();
+
+        var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app), _.clone(datas1));
+
+        sendAieActivityPathLog(logs);
 
         var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app), _.clone(datas));
 
