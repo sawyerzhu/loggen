@@ -2,13 +2,13 @@
 var udp = require('./transport/udp');
 var redis = require('./transport/redis');
 
-var host = 'ds.stratusee.net';
+var host = 'ds.stratusee.com';
  var udp_client = new udp.udp_client(host, 514);
 var redis_client = new redis.redis_client(host, 6379);
 
 for (var i = 0; i < 1; i++) {
 
-    var raw_gw_log = 'Jul 27 00:00:00 ulogd[284]: [DESTROY] GW16 221.176.24.154 ORIG: SRC=64.54.35.118 DST=58.110.162.121 DN=www.dropbox.com MAC=ja:ck:01:00:00:00 PROTO=TCP SPT=38372 DPT=443 PKTS=4 BYTES=10 , REPLY: SRC=58.110.162.121 DST=64.54.35.118 PROTO=TCP SPT=443 DPT=38372 PKTS=1 BYTES=679 ';
+    var raw_gw_log = 'Jul 27 00:00:00 ulogd[284]: [DESTROY] GW16 ORIG: EDGE=221.176.24.154 SRC=64.54.35.118 DST=58.110.162.121 DN=www.dropbox.com MAC=ja:ck:01:00:00:00 PROTO=TCP SPT=38372 DPT=443 PKTS=4 BYTES=10 , REPLY: SRC=58.110.162.121 DST=64.54.35.118 PROTO=TCP SPT=443 DPT=38372 PKTS=1 BYTES=679 ';
 
     // var raw_gw_log = 'aaaa'
     udp_client.send(raw_gw_log);

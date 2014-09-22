@@ -79,11 +79,11 @@ while (startDate.isBefore(endDate)) {
 
         var app = random_data.random_app();
 
-        var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app), _.clone(datas1));
+        // var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app, 'login'), _.clone(datas1));
 
-        sendAieActivityPathLog(logs);
+        // sendAieActivityPathLog(logs);
 
-        var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app), _.clone(datas));
+        var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app, 'login'), _.clone(datas));
 
         sendAieActivityPathLog(logs);
     }
