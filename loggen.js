@@ -83,7 +83,7 @@ while (startDate.isBefore(endDate)) {
 
         // sendAieActivityPathLog(logs);
 
-        var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app, 'login'), _.clone(datas));
+        var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app), _.clone(datas));
 
         sendAieActivityPathLog(logs);
     }

@@ -913,7 +913,7 @@ function random_mac() {
 }
 
 function random_file_name(file_name) {
-    file_name = file_name || random_array_data(['cms_fs.doc', 'overview.doc', "linux.pdf", "jquery.txt", "mootools.xls", "angular.pdf", "emberjs.doc", "jetty.pdf", "spring.doc", "hibernate.pdf", "stratus.xmls", "iteye.txt", "csdn.txt", "netty.txt", "mina.doc"]);
+    file_name = file_name || random_array_data(['cms_fs.docx', 'overview.doc', "linux.pdf", "jquery.txt", "mootools.xls", "angular.pdf", "emberjs.doc", "jetty.pdf", "spring.doc", "hibernate.pdf", "stratus.xml", "iteye.ppt", "csdn.txt", "netty.pptx", "mina.doc", 'hadoop.xlsx']);
 
     return file_name;
 }
