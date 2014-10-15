@@ -108,7 +108,7 @@ function normal_b(startDate, endDate) {
 
                 var pre_app = ['Box'];
 
-                var app_count = random_data.random_int(1, 2);
+                var app_count = random_data.random_int(4, 6);
 
                 for (var n = 0; n < app_count; n++) {
                     var app = random_data.random_app();
