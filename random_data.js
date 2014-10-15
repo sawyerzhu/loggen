@@ -826,6 +826,10 @@ var type_2_value = {
         return random_file_name();
     },
 
+    "file_size": function() {
+        return random_file_size(2, 8);
+    },
+
     "mac": function() {
         return random_mac();
     }
@@ -916,6 +920,12 @@ function random_file_name(file_name) {
     file_name = file_name || random_array_data(['cms_fs.docx', 'overview.doc', "linux.pdf", "jquery.txt", "mootools.xls", "angular.pdf", "emberjs.doc", "jetty.pdf", "spring.doc", "hibernate.pdf", "stratus.xml", "iteye.ppt", "csdn.txt", "netty.pptx", "mina.doc", 'hadoop.xlsx']);
 
     return file_name;
+}
+
+function() random_file_size(start, end) {
+    start = start || 2;
+    end = end || 8
+    return random_int(start, end) * 1024;
 }
 
 function random_boolean() {

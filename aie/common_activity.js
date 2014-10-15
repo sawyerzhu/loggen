@@ -64,7 +64,7 @@ module.exports = function(user_id_key, get_user_id_func) {
                         },
 
                         "objs.size": {
-                            "type": "int",
+                            "type": "file_size",
                             "key": "size"
                         }
                     }
@@ -99,7 +99,7 @@ module.exports = function(user_id_key, get_user_id_func) {
                         },
 
                         "objs.size": {
-                            "type": "int",
+                            "type": "file_size",
                             "key": "size"
                         }
                     }
@@ -134,7 +134,7 @@ module.exports = function(user_id_key, get_user_id_func) {
                         },
 
                         "objs.size": {
-                            "type": "int",
+                            "type": "file_size",
                             "key": "size"
                         }
                     }
@@ -169,7 +169,7 @@ module.exports = function(user_id_key, get_user_id_func) {
                         },
 
                         "objs.size": {
-                            "type": "int",
+                            "type": "file_size",
                             "key": "size"
                         }
                     }

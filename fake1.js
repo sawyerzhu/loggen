@@ -398,8 +398,6 @@ function abnormal_c(startDate) {
 
                 "objs.name": "nodejs.pdf",
 
-                "objs.size": "1024",
-
                 "objs.type": "file"
             };
 
@@ -479,7 +477,7 @@ function abnormal_e(startDate) {
 
         "objs.name": "business_plan.doc",
 
-        "objs.size": 60,
+        "objs.size": 10 * 1024,
 
         "objs.type": "file"
     };
@@ -506,7 +504,7 @@ function abnormal_e(startDate) {
 
         "objs.name": "business_plan.doc",
 
-        "objs.size": 60,
+        "objs.size": 10 * 1024,
 
         "objs.type": "file"
     };
@@ -532,7 +530,7 @@ function abnormal_e(startDate) {
 
         "objs.name": "business_plan.doc",
 
-        "objs.size": 60,
+        "objs.size": 10 * 1024,
 
         "objs.type": "file"
     };
@@ -572,7 +570,9 @@ function abnormal_f(startDate) {
 
             'dst_ip': '2.103.255.255',
 
-            "objs.size": 1024 * 1024 * random_data.random_int(128, 256),
+            "objs.size": function() {
+                1024 * 1024 * random_data.random_int(128, 256)
+            },
 
             "objs.type": "file"
         };
