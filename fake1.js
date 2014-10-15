@@ -577,9 +577,9 @@ function abnormal_f(startDate) {
 
             'dst_ip': '2.103.255.255',
 
-            "objs.size": function() {
-                1024 * 1024 * random_data.random_int(128, 256)
-            },
+            // "objs.size": function() {
+            //     1024 * 1024 * random_data.random_int(128, 256)
+            // },
 
             "objs.type": "file"
         };
