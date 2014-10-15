@@ -21,7 +21,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -36,7 +36,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -51,7 +51,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -66,7 +66,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -81,7 +81,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -96,7 +96,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -111,7 +111,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -126,7 +126,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -141,7 +141,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -156,7 +156,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -171,7 +171,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -186,7 +186,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -201,7 +201,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -216,7 +216,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -231,7 +231,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -246,7 +246,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -261,7 +261,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -276,7 +276,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -291,7 +291,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -362,7 +362,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
@@ -377,7 +377,7 @@ var app_id_2_app = {
             "upload": ["-100000", "-100001"],
             "preview": ["-100000", "-100004"],
             "delete": ["-100000", "-100003"],
-            "upload_preview_download": ["-100000", "-100004", "-100002"],
+            "upload_preview_download": ["-100000", "-100001", "-100004", "-100002"],
             "download": ["-100000", "-100004", "-100002"]
         },
         "activities": require('./aie/common_activity.js')('user_token')
