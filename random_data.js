@@ -922,7 +922,7 @@ function random_file_name(file_name) {
     return file_name;
 }
 
-function() random_file_size(start, end) {
+function random_file_size(start, end) {
     start = start || 2;
     end = end || 8
     return random_int(start, end) * 1024;
