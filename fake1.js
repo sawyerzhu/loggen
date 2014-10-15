@@ -140,7 +140,7 @@ function normal_b(startDate, endDate) {
                             }
                         };
 
-                        var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app, 'login'), _.clone(datas));
+                        var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app, 'upload_preview_download'), _.clone(datas));
 
                         sendAieActivityPathLog(logs);
                     }
