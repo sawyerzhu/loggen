@@ -77,7 +77,7 @@ while (startDate.isBefore(endDate)) {
         datas1 = _.clone(datas);
         datas1.login_name = user_info.sub_email;
 
-        var app = random_data.random_app();
+        var app = random_data.random_app('9');
 
         // var logs = log_format.gen_aie_acvitity_path_log(app, random_data.random_app_activity_path(app, 'login'), _.clone(datas1));
 
