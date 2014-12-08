@@ -42,6 +42,8 @@ var redis_client = new redis.redis_client(host, 6379);
 
 var args = process.argv.slice(2);
 
+var time_span = 16
+
 // 2014-08-01 - 2014-08-31 Every user using official email to access Box on the all devices every working day. Each working day every user login 1-3 times to Box. Each login to Box, user will do random activities(upload, preview, download, delete file)
 function normal_a(startDate, endDate) {
 
@@ -62,7 +64,7 @@ function normal_a(startDate, endDate) {
                     for (var i = 0; i < times; i++) {
 
                         var date = startDate.clone();
-                        date.addHours(random_data.random_int(0, 8));
+                        date.addHours(random_data.random_int(0, time_span));
 
                         var datas = {
                             "timestamp": function(log_format, data, key) {
@@ -124,7 +126,7 @@ function normal_b(startDate, endDate) {
                     for (var i = 0; i < times; i++) {
 
                         var date = startDate.clone();
-                        date.addHours(random_data.random_int(0, 8));
+                        date.addHours(random_data.random_int(0, time_span));
 
                         var datas = {
                             "timestamp": function(log_format, data, key) {
@@ -182,7 +184,7 @@ function normal_c(startDate, endDate) {
                 for (var i = 0; i < 1; i++) {
 
                     var date = startDate.clone();
-                    date.addHours(random_data.random_int(0, 8));
+                    date.addHours(random_data.random_int(0, time_span));
 
                     var datas = {
                         "timestamp": function(log_format, data, key) {
@@ -228,7 +230,7 @@ function normal_d(startDate, endDate) {
                 for (var i = 0; i < times; i++) {
 
                     var date = startDate.clone();
-                    date.addHours(random_data.random_int(0, 8));
+                    date.addHours(random_data.random_int(0, time_span));
 
                     var datas = {
                         "timestamp": function(log_format, data, key) {
@@ -274,7 +276,7 @@ function normal_e(startDate, endDate) {
                 for (var i = 0; i < times; i++) {
 
                     var date = startDate.clone();
-                    date.addHours(random_data.random_int(0, 8));
+                    date.addHours(random_data.random_int(0, time_span));
 
                     var datas = {
                         "timestamp": function(log_format, data, key) {
@@ -310,7 +312,7 @@ function abnormal_a(startDate) {
     for (var i = 0; i < 17; i++) {
 
         var date = startDate.clone();
-        date.addHours(random_data.random_int(0, 8));
+        date.addHours(random_data.random_int(0, time_span));
 
         var datas = {
             "timestamp": function(log_format, data, key) {
@@ -343,7 +345,7 @@ function abnormal_b(startDate) {
     for (var i = 0; i < 30; i++) {
 
         var date = startDate.clone();
-        date.addHours(random_data.random_int(0, 8));
+        date.addHours(random_data.random_int(0, time_span));
 
         var datas = {
             "timestamp": function(log_format, data, key) {
@@ -388,7 +390,7 @@ function abnormal_c(startDate) {
         for (var i = 0; i < times; i++) {
 
             var date = startDate.clone();
-            date.addHours(random_data.random_int(0, 8));
+            date.addHours(random_data.random_int(0, time_span));
 
             var datas = {
                 "timestamp": function(log_format, data, key) {
@@ -428,7 +430,7 @@ function abnormal_d(startDate) {
     for (var i = 0; i < 1; i++) {
 
         var date = startDate.clone();
-        date.addHours(random_data.random_int(0, 8));
+        date.addHours(random_data.random_int(0, time_span));
 
         var datas = {
             "timestamp": function(log_format, data, key) {
@@ -558,7 +560,7 @@ function abnormal_f(startDate) {
     for (var i = 0; i < 100; i++) {
 
         var date = startDate.clone();
-        date.addHours(random_data.random_int(0, 8));
+        date.addHours(random_data.random_int(0, time_span));
 
         var datas = {
             "timestamp": function(log_format, data, key) {
@@ -599,18 +601,18 @@ function abnormal_f(startDate) {
 
     var day_cache = {};
 
-    normal_a(new Date(2014, month, 1, 8, 0, 0), new Date(2014, month, max_day, 8, 0, 0));
-    normal_b(new Date(2014, month, 1, 8, 0, 0), new Date(2014, month, max_day, 8, 0, 0));
-    normal_c(new Date(2014, month, 1, 8, 0, 0), new Date(2014, month, max_day, 8, 0, 0));
-    normal_d(new Date(2014, month, 1, 8, 0, 0), new Date(2014, month, max_day, 8, 0, 0));
-    normal_e(new Date(2014, month, 1, 8, 0, 0), new Date(2014, month, max_day, 8, 0, 0));
+    normal_a(new Date(2014, month, 1, 0, 0, 0), new Date(2014, month, max_day, 0, 0, 0));
+    normal_b(new Date(2014, month, 1, 0, 0, 0), new Date(2014, month, max_day, 0, 0, 0));
+    normal_c(new Date(2014, month, 1, 0, 0, 0), new Date(2014, month, max_day, 0, 0, 0));
+    normal_d(new Date(2014, month, 1, 0, 0, 0), new Date(2014, month, max_day, 0, 0, 0));
+    normal_e(new Date(2014, month, 1, 0, 0, 0), new Date(2014, month, max_day, 0, 0, 0));
 
-    abnormal_a(new Date(2014, month, getRandomDay(max_day, day_cache), 8, 0, 0));
-    abnormal_b(new Date(2014, month, getRandomDay(max_day, day_cache), 8, 0, 0));
-    abnormal_c(new Date(2014, month, getRandomDay(max_day, day_cache), 8, 0, 0));
-    abnormal_d(new Date(2014, month, getRandomDay(max_day, day_cache), 8, 0, 0));
-    abnormal_e(new Date(2014, month, getRandomDay(max_day, day_cache), 8, 0, 0));
-    abnormal_f(new Date(2014, month, getRandomDay(max_day, day_cache), 8, 0, 0));
+    abnormal_a(new Date(2014, month, getRandomDay(max_day, day_cache), 0, 0, 0));
+    abnormal_b(new Date(2014, month, getRandomDay(max_day, day_cache), 0, 0, 0));
+    abnormal_c(new Date(2014, month, getRandomDay(max_day, day_cache), 0, 0, 0));
+    abnormal_d(new Date(2014, month, getRandomDay(max_day, day_cache), 0, 0, 0));
+    abnormal_e(new Date(2014, month, getRandomDay(max_day, day_cache), 0, 0, 0));
+    abnormal_f(new Date(2014, month, getRandomDay(max_day, day_cache), 0, 0, 0));
 });
 
 
