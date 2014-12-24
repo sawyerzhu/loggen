@@ -36,7 +36,7 @@ function sendAieActivityPathLog(logs) {
     }
 }
 
-var host = 'dev-ds.stratusee.com';
+var host = '127.0.0.1';  //'dev-ds.stratusee.com';
 var udp_client = new udp.udp_client(host, 514);
 var redis_client = new redis.redis_client(host, 6379);
 

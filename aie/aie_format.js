@@ -41,6 +41,11 @@ exports.aie_head = {
         "prefix": ":"
     },
 
+    "log_type": {
+      "type": "int",
+      "default": 1
+    },
+
     "sig_id": {
         "type": "int"
     },

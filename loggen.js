@@ -46,7 +46,7 @@ var endDate = new Date(Date.parse('2014-01-02T00:00:00'));
 
 while (startDate.isBefore(endDate)) {
 
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 1; i++) {
 
         var date = new Date(startDate.toFormat('YYYY-MM-DDTHH:MI:SS'));
         date.addHours(random_data.random_int(1, 15));
