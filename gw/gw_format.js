@@ -32,7 +32,7 @@ exports.gw_format = {
     },
     "gwid": {
         "type": "string",
-        "default": "GW20000001"
+        "default": "FAKE"
     },
 
     "orig": {

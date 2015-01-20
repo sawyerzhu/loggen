@@ -36,7 +36,7 @@ function sendAieActivityPathLog(logs) {
     }
 }
 
-var host = '127.0.0.1';  //'dev-ds.stratusee.com';
+var host = 'dev-ds.stratusee.com';
 var udp_client = new udp.udp_client(host, 514);
 var redis_client = new redis.redis_client(host, 6379);
 
@@ -592,27 +592,27 @@ function abnormal_f(startDate) {
     }
 }
 
-[/*6, 7, 8, 9, 10, */11].forEach(function(month) {
+[0/*6, 7, 8, 9, 10, 11*/].forEach(function(month) {
     var max_day = 30;
 
-    if (month == 6 || month == 7 || month == 9 || month == 11) {
+    if (month == 0 || month == 2 || month == 4 || month == 6 || month == 7 || month == 9 || month == 11) {
         max_day = 31;
     }
 
     var day_cache = {};
 
-    normal_a(new Date(2014, month, 1, 0, 0, 0), new Date(2014, month, max_day, 0, 0, 0));
-    normal_b(new Date(2014, month, 1, 0, 0, 0), new Date(2014, month, max_day, 0, 0, 0));
-    normal_c(new Date(2014, month, 1, 0, 0, 0), new Date(2014, month, max_day, 0, 0, 0));
-    normal_d(new Date(2014, month, 1, 0, 0, 0), new Date(2014, month, max_day, 0, 0, 0));
-    normal_e(new Date(2014, month, 1, 0, 0, 0), new Date(2014, month, max_day, 0, 0, 0));
+    normal_a(new Date(2015, month, 1, 0, 0, 0), new Date(2015, month, max_day, 0, 0, 0));
+    normal_b(new Date(2015, month, 1, 0, 0, 0), new Date(2015, month, max_day, 0, 0, 0));
+    normal_c(new Date(2015, month, 1, 0, 0, 0), new Date(2015, month, max_day, 0, 0, 0));
+    normal_d(new Date(2015, month, 1, 0, 0, 0), new Date(2015, month, max_day, 0, 0, 0));
+    normal_e(new Date(2015, month, 1, 0, 0, 0), new Date(2015, month, max_day, 0, 0, 0));
 
-    abnormal_a(new Date(2014, month, getRandomDay(max_day, day_cache), 0, 0, 0));
-    abnormal_b(new Date(2014, month, getRandomDay(max_day, day_cache), 0, 0, 0));
-    abnormal_c(new Date(2014, month, getRandomDay(max_day, day_cache), 0, 0, 0));
-    abnormal_d(new Date(2014, month, getRandomDay(max_day, day_cache), 0, 0, 0));
-    abnormal_e(new Date(2014, month, getRandomDay(max_day, day_cache), 0, 0, 0));
-    abnormal_f(new Date(2014, month, getRandomDay(max_day, day_cache), 0, 0, 0));
+    abnormal_a(new Date(2015, month, getRandomDay(max_day, day_cache), 0, 0, 0));
+    abnormal_b(new Date(2015, month, getRandomDay(max_day, day_cache), 0, 0, 0));
+    abnormal_c(new Date(2015, month, getRandomDay(max_day, day_cache), 0, 0, 0));
+    abnormal_d(new Date(2015, month, getRandomDay(max_day, day_cache), 0, 0, 0));
+    abnormal_e(new Date(2015, month, getRandomDay(max_day, day_cache), 0, 0, 0));
+    abnormal_f(new Date(2015, month, getRandomDay(max_day, day_cache), 0, 0, 0));
 });
 
 

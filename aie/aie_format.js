@@ -13,12 +13,12 @@ exports.aie_head = {
 
     "gw_id": {
         "type": "string",
-        "default": "GW20000001"
+        "default": "FAKE"
     },
 
     "aie_id": {
         "type": "string",
-        "default": "AIE20000001",
+        "default": "FAKE",
     },
 
     "src_ip": {
