@@ -14,7 +14,7 @@ for (var i = 0; i < 1; i++) {
     udp_client.send(raw_gw_log);
 
 
-    var raw_aie_log = "2014-11-04T00:00:00 GW16 AIE16 172.16.0.160:51315:172.16.0.160:3128 1 -1 1 0 000 0 {\"method\":\"GET\",\"user_id\":\"ma7ha6g38chg9tngq69n5b72r6\",\"rsp_code\":\"200\"}";
+    var raw_aie_log = "2014-11-04T00:00:00 GW16 AIE16 172.16.0.160:51315:172.16.0.160:3128:1 1 -1 1 0 000 0 {\"method\":\"GET\",\"user_id\":\"ma7ha6g38chg9tngq69n5b72r6\",\"rsp_code\":\"200\"}";
     // var raw_aie_log = 'aaa';
     redis_client.rpush('aie', raw_aie_log);
 

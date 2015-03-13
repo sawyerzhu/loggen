@@ -41,6 +41,12 @@ exports.aie_head = {
         "prefix": ":"
     },
 
+    "sess_id": {
+        "type": "int",
+        "default": 1,
+        "prefix": ":"
+    },
+
     "log_type": {
       "type": "int",
       "default": 1

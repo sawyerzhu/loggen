@@ -11,10 +11,10 @@ var raw_gw_log = 'Nov 04 00:00:00 ulogd[284]: [DESTROY] GW16 ORIG: EDGE=221.176.
 redis_client.rpush('gw', raw_gw_log);
 
 // setTimeout(function() {
-var raw_aie_log = "2014-11-04T00:00:00 GW16 AIE16 172.16.0.160:38372:54.96.28.28:443 1 -1 1 0 000 0 {\"login_name\": \"sawyer@126.com\",\"method\":\"GET\",\"rsp_code\":\"200\"}";
+var raw_aie_log = "2014-11-04T00:00:00 GW16 AIE16 172.16.0.160:38372:54.96.28.28:443:1 1 -1 1 0 000 0 {\"login_name\": \"sawyer@126.com\",\"method\":\"GET\",\"rsp_code\":\"200\"}";
 redis_client.rpush('aie', raw_aie_log);
 
-var raw_aie_log = "2014-11-04T00:00:00 GW16 AIE16 172.16.0.160:38372:54.96.28.28:443 1 -1 1 0 000 0 {\"login_name\": \"sawyer@gmail.com\",\"method\":\"GET\",\"rsp_code\":\"200\"}";
+var raw_aie_log = "2014-11-04T00:00:00 GW16 AIE16 172.16.0.160:38372:54.96.28.28:443:1 1 -1 1 0 000 0 {\"login_name\": \"sawyer@gmail.com\",\"method\":\"GET\",\"rsp_code\":\"200\"}";
 redis_client.rpush('aie', raw_aie_log);
 
 
