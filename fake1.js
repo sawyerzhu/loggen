@@ -36,7 +36,7 @@ function sendAieActivityPathLog(logs) {
     }
 }
 
-var host = 'dev-ds.stratusee.com'; // localhost
+var host = 'localhost'; // localhost   dev-ds.stratusee.com
 var udp_client = new udp.udp_client(host, 514);
 var redis_client = new redis.redis_client(host, 6379);
 
@@ -592,7 +592,7 @@ function abnormal_f(startDate) {
     }
 }
 
-[1/*6, 7, 8, 9, 10, 11*/].forEach(function(month) {
+[3/*6, 7, 8, 9, 10, 11*/].forEach(function(month) {
     var max_day = 30;
 
     if (month == 0 || month == 2 || month == 4 || month == 6 || month == 7 || month == 9 || month == 11) {
